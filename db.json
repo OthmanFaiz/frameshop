@@ -1,0 +1,17 @@
+{
+    "_id": {
+        "$oid": "6265daa5bb511fa9666e6da0"
+    },
+    "name": "dipping cookies bites",
+    "description": "dozen of cookies bites with one dipping chocolate sauce",
+    "price": {
+        "$numberdouble": "7.0"
+    },
+    "category": "cookies",
+    "discount": false,
+    "dis-amount": {
+        "$numberdouble": "0.0"
+    },
+	"date_added": "new Date()",
+    "image": ["urlpath","urlpath","urlpath"]
+}
