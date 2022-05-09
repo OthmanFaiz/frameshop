@@ -1,9 +1,11 @@
-import { Fragment } from "react"
+import { Fragment } from 'react';
 
-export default Headers(){
-    retur(
-        <Fragment>
-            <h1>my header</h1>
-        </Fragment>
-    )
+import classes from './Header.module.css';
+
+export default function Headers() {
+	return (
+		<Fragment>
+			<h1 className={classes.header}>my header</h1>
+		</Fragment>
+	);
 }
