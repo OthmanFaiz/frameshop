@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import Headers from '../components/Header';
+import Headers from '../components/Layout/Header';
 import clientPromise from '../lib/mongodb';
 
 export default function Home({ isConnected }) {
@@ -10,7 +10,6 @@ export default function Home({ isConnected }) {
 			</Head>
 
 			<main>
-				<Headers />
 				<h1 className='title'>
 					Welcome to <a href='http://www.frameworkstud.io'>FrameworkStud.io</a>{' '}
 					testing time!
