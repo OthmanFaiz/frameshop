@@ -3,11 +3,11 @@
 - [x] Start with the todo list
 - [x] Simple API to connect to mongoDB
 - [] Adrinalin frontpage (data from the DB)
-    - [] header
-    - [] body
-    - [] footer
+    - [ ] header
+    - [ ] body
+    - [ ] footer
 
-> no need to quick, have fun for now.. we will start after you come ��
+> no need to quick, have fun for now.. we will start after you come
 
 1) otto put anywhere the pages layout we start doing the front end
 or i do it while u do the mango dp shits
