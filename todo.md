@@ -2,7 +2,7 @@
 
 - [x] Start with the todo list
 - [x] Simple API to connect to mongoDB
-- [] Adrinalin frontpage (data from the DB)
+- [ ] Adrinalin frontpage (data from the DB)
     - [ ] header
     - [ ] body
     - [ ] footer
