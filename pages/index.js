@@ -8,6 +8,7 @@ export default function Home({ isConnected }) {
 			<Head>
 				<title>Frameshop testing time</title>
 			</Head>
+			<Headers />
 
 			<main>
 				<h1 className='title'>
@@ -182,7 +183,7 @@ export default function Home({ isConnected }) {
 export async function getServerSideProps(context) {
 	try {
 		const client = await clientPromise;
-		const db = client.db('adrenaline');
+		// const db = client.db('adrenaline');
 		// `await clientPromise` will use the default database passed in the MONGODB_URI
 		// However you can use another database (e.g. myDatabase) by replacing the `await clientPromise` with the folloing code:
 		//
@@ -191,8 +192,8 @@ export async function getServerSideProps(context) {
 		//
 		// Then you can execute queries against your database like so:
 		// db.find({}) or any of the MongoDB Node Driver commands
-		const items = await db.collection('items').find({}).toArray();
-		console.log(items);
+		// const items = await db.collection('items').find({}).toArray();
+		// console.log(items);
 		return {
 			props: { isConnected: true },
 		};
