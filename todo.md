@@ -3,14 +3,15 @@
 - [x] Start with the todo list
 - [x] Simple API to connect to mongoDB
 - [ ] Adrinalin frontpage (data from the DB)
-    - [ ] header ( needs more tweaks )
-    - [ ] body
-    - [ ] footer
+  - [ ] header ( needs more tweaks )
+  1. im not sure why class nav, and scrollbar does not work!
+     2.the navigation margin maybe shift to left little bit
+  - [ ] body
+  - [ ] footer
 
 > no need to quick, have fun for now.. we will start after you come
 
-1) otto put anywhere the pages layout we start doing the front end
-or i do it while u do the mango dp shits
+1. otto put anywhere the pages layout we start doing the front end
+   or i do it while u do the mango dp shits
 
-
-2) i will use our html css website we made in order to finish quickly, by implemnting our css to our new components we will build here
+2. i will use our html css website we made in order to finish quickly, by implemnting our css to our new components we will build here

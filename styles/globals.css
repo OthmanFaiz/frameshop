@@ -1,19 +1,68 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap');
+/*=====================
+    basic layout 
+ =====================*/
 
 html,
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	padding: 0;
+	margin: 0;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+/*=====================
+	 custom layout 
+  =====================*/
+:root {
+	/* font family */
+	--ff-primary: 'Roboto', 'san-serif';
+	--ff-secondary: 'Barlow', 'san-serif';
+
+	/* font weight */
+	--fw-300: 300;
+	--fw-400: 400;
+	--fw-500: 500;
+	--fw-700: 700;
+
+	/* font style  */
+	--fs-title: 16px;
+	--fs-dish: 15px;
+	--fs-list: 12;
+	--fs-p: 8px;
+
+	/* font color  */
+	--fc-primary: #121212;
+	--fc-accent: #999999;
+	--fc-white: #ffffff;
+
+	/* background color */
+	--clr-primary: #67cecc;
+	--clr-action: #eb9b3e;
 }
 
-* {
-  box-sizing: border-box;
+/*=====================
+   typograpghy 	 Layout 
+  =====================*/
+body {
+	font-family: var(--ff-primary);
+}
+
+h1 {
+	font-size: var(--fs-title);
+}
+
+h2 {
+	font-size: var(--fs-dish);
+}
+
+p {
+	font-size: var(--fs-p);
+}
+
+main {
+	margin-top: 250px;
+}
+
+li {
+	list-style: none;
 }

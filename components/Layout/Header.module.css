@@ -1,14 +1,90 @@
+/*=====================
+   Short Cuts  
+  =====================*/
+
+.flex {
+	display: flex;
+}
+
+.flex__sb {
+	justify-content: space-between;
+}
+
+.flex__col {
+	flex-direction: column;
+}
+/*=====================
+   layout   
+  =====================*/
+.nav {
+	height: 44px;
+	padding: 10px 4px;
+	background-color: var(--clr-primary);
+}
+
+.hero {
+	display: flex;
+	justify-content: space-between;
+
+	margin: 0 auto;
+	background-image: url('/images/hero.png');
+	background-position: center;
+	background-size: cover;
+	filter: drop-shadow(0px 1px 4px #67cecc);
+	min-height: 164px;
+	width: 100%;
+}
+
+.hero__logo {
+	align-self: flex-start;
+	margin-top: 15px;
+	margin-bottom: 1em;
+}
+
+.hero__logo_size {
+	min-height: 50px;
+	width: 100%;
+}
+
+.hero__menu {
+	margin-left: 1em;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.hero__search {
+	margin-right: 1em;
+	margin-top: 15px;
+	cursor: pointer;
+}
+
+.scorllbar {
+	/* not sure wht  */
+}
+
+.scorllbar__item {
+	background: var(--clr-primary);
+	border-radius: 7px;
+	margin: 0 1em;
+	cursor: pointer;
+	white-space: nowrap;
+	padding: 0.5em 1.5em;
+	filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.scorllbar__text {
+	font-size: var(--fs-list);
+	font-family: var(--ff-secondary);
+	font-weight: var(--fw-700);
+	color: var(--fc-white);
+}
+
+/* 
 .header {
 	display: flex;
 	flex-direction: column;
 }
-.nav {
-	background-color: #67CECC;
-	height: 44px;
-	display: flex;
-	justify-content: space-between;
-	padding: 10px 4px;
-}
+
 .hero {
 	width: 100%;
 	height: 112px;
@@ -23,5 +99,5 @@
 .category__title {
 	font-size: 18px;
 	font-weight: bold;
-	color: #67CECC;
-}
+	color: #67cecc;
+} */

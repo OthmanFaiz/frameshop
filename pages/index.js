@@ -7,6 +7,8 @@ export default function Home() {
 			<Head>
 				<title>Frameshop testing time</title>
 			</Head>
+
+			{/* Components */}
 			<Headers />
 		</>
 	);
