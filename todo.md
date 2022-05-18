@@ -8,6 +8,10 @@
         []the navigation margin maybe shift to left little bit
   - [ ] body
         [x] fixed the fonts size in global css
+        [X] card layout been made
+        [] item counter
+        [] item counter functionallty
+        [] connect item counter to footer
   - [ ] footer
 
 > no need to quick, have fun for now.. we will start after you come
