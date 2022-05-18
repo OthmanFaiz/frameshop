@@ -1,2 +1,26 @@
+/*=====================
+   Short Cuts  
+  =====================*/
 
+.flex {
+	display: flex;
+}
 
+.flex__sb {
+	justify-content: space-between;
+}
+
+.flex__col {
+	flex-direction: column;
+}
+/*=====================
+    
+  =====================*/
+.footer__counting {
+}
+.footer__count {
+}
+.footer__price {
+}
+.footer__cart {
+}

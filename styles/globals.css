@@ -76,5 +76,16 @@ li {
 	list-style: none;
 }
 footer {
-	background-color: #eb9b3e;
+	cursor: pointer;
+	background-color: var(--clr-action);
+	color: var(--fc-white);
+	width: 100%;
+	border-radius: 10px;
+	padding: 0.5em 1em;
+	margin: 1em auto;
+	align-items: center;
+	justify-content: space-between;
+	position: fixed;
+	bottom: 0;
+	margin-bottom: 0;
 }
