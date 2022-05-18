@@ -13,7 +13,8 @@
         [X] card layout been made
         [x] item counter
         [x] item counter functionallty
-        []separte item counter functionallty
+        [x]separte item counter functionallty
+            - bug: when the item is deleted, the counter will not update
         [] connect item counter to footer
   - [ ] footer
         [x] main footer layout

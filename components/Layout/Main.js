@@ -1,20 +1,7 @@
 import classes from './Main.module.css';
 import Image from 'next/image';
-import { useState } from 'react';
 
-export default function Main({ category, items }) {
-	// counter function for item count, need  a tweek
-	const [counter, setCounter] = useState(0);
-
-	// Addition button is clicked
-	const handleClickAddtion = () => {
-		setCounter(counter + 1);
-	};
-
-	// decrement button
-	const handleClickSubtraction = () => {
-		setCounter(counter - 1);
-	};
+export default function Main({ category, items, cart, addToCart, removeFromCart }) {
 	return (
 		<>
 			{category.items.map((cat) => (
@@ -38,17 +25,17 @@ export default function Main({ category, items }) {
 										</div>
 										<div className={`${classes.card_count} ${classes.flex} `}>
 											<Image
-												onClick={handleClickSubtraction}
+												onClick={() => removeFromCart(item)}
 												src='/images/svg/minus.svg'
 												alt=''
 												width={12}
 												height={12}
 											/>
 											<div className={classes.card_count_draw}>
-												<p className={classes.card_counting}>{counter}</p>
+												<p className={classes.card_counting}>{!cart[item._id] ? 0 : cart[item._id].quantity}</p>
 											</div>
 											<Image
-												onClick={handleClickAddtion}
+												onClick={() => addToCart(item)}
 												src='/images/svg/plus.svg'
 												alt=''
 												width={12}

@@ -8,6 +8,7 @@ import { useState, useEffect } from 'react';
 export default function Home() {
 	const [category, setCategory] = useState({});
 	const [items, setItems] = useState([]);
+	const [cart, setCart] = useState({})
 
 	useEffect(() => {
 		fetch('http://localhost:3000/api/items/category')
@@ -19,6 +20,22 @@ export default function Home() {
 			.then((data) => setItems(data));
 	}, []);
 
+	const addToCart = (item) => {
+		if(!cart[item._id]) {
+			setCart({...cart, [item._id]: {...item, quantity: 1}})
+		} else {
+			setCart({...cart, [item._id]: {...item, quantity: cart[item._id].quantity + 1}})
+		}
+	}
+
+	const removeFromCart = (item) => {
+		if(cart[item._id].quantity > 1) {
+			setCart({...cart, [item._id]: {...item, quantity: cart[item._id].quantity - 1}})
+		} else {
+			delete cart[item._id]
+		}
+	}
+
 	if (Object.entries(category).length > 0 && Object.entries(items).length > 0) {
 		return (
 			<>
@@ -28,8 +45,8 @@ export default function Home() {
 
 				{/* Components */}
 				<Headers category={category} />
-				<Main category={category} items={items} />
-				<Footer />
+				<Main cart={cart} category={category} items={items} addToCart={addToCart} removeFromCart={removeFromCart} />
+				<Footer cart={cart} />
 			</>
 		);
 	} else {
