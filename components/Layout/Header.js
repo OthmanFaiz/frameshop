@@ -2,7 +2,6 @@ import Image from 'next/image';
 import classes from './Header.module.css';
 
 export default function Headers({ category }) {
-
 	return (
 		<header className={`${classes.flex} ${classes.flex__col}`}>
 			<div className={`${classes.nav} ${classes.hero}`}>
@@ -34,4 +33,4 @@ export default function Headers({ category }) {
 			</nav>
 		</header>
 	);
-	}
+}

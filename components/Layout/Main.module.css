@@ -1,0 +1,83 @@
+/*=====================
+   Short Cuts  
+  =====================*/
+
+.flex {
+	display: flex;
+}
+
+.flex__sb {
+	justify-content: space-between;
+}
+
+.flex__col {
+	flex-direction: column;
+}
+.btn {
+}
+/*=====================
+   layout   
+  =====================*/
+
+.story {
+	margin: 1em 0.5em;
+}
+
+.story_title {
+	border-bottom: 1px solid #38afad;
+}
+.title {
+	margin-bottom: 3px;
+}
+
+.container {
+	padding: 8px;
+}
+.card {
+	background: #f7fdfc;
+	border-radius: 4px;
+	margin-bottom: 1em;
+	padding: 8px;
+	display: flex;
+}
+
+.card_info {
+	order: 2;
+	margin-left: 12px;
+}
+.card_title {
+	margin: 0.5em;
+}
+.card_description {
+	margin: 0.25em;
+}
+.card_price {
+	display: inline-block;
+	text-decoration: none;
+	background: #f2a359;
+	border-radius: 4px;
+	padding: 0.25em 1.5em;
+	/* price button text */
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 12px;
+	border: 3px solid red;
+}
+
+.card_img {
+	order: 1;
+	/* position: static;
+	width: 75px;
+	height: 75px;
+	left: 4px;
+	top: 4px;
+
+	border-radius: 4px; */
+
+	/* Inside auto layout */
+	/* 
+	flex: none;
+	order: 0;
+	flex-grow: 0;
+	margin: 0px 4px; */
+}

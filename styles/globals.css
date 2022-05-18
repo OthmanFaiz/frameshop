@@ -4,8 +4,10 @@
     basic layout 
  =====================*/
 
-html,
-body {
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
@@ -16,17 +18,18 @@ body {
 :root {
 	/* font family */
 	--ff-primary: 'Roboto', 'san-serif';
-	--ff-secondary: 'Barlow', 'san-serif';
+	--ff-secondary: 'Inter', 'san-serif';
 
 	/* font weight */
 	--fw-300: 300;
 	--fw-400: 400;
 	--fw-500: 500;
+	--fw-600: 600;
 	--fw-700: 700;
 
 	/* font style  */
-	--fs-title: 16px;
-	--fs-dish: 15px;
+	--fs-title: 20px;
+	--fs-dish: 16px;
 	--fs-list: 12;
 	--fs-p: 8px;
 
@@ -45,22 +48,28 @@ body {
   =====================*/
 body {
 	font-family: var(--ff-primary);
+	background-color: #e5e5e5;
 }
 
 h1 {
 	font-size: var(--fs-title);
+	font-family: var(--ff-primary);
+	font-weight: var(--fw-600);
+	line-height: 24px;
 }
 
 h2 {
 	font-size: var(--fs-dish);
+	font-family: var(--ff-secondary);
+	font-weight: var(--fw-400);
+	font-size: var(--fs-dish);
+	line-height: 19px;
 }
 
 p {
 	font-size: var(--fs-p);
 }
-
-main {
-	margin-top: 250px;
+header {
 }
 
 li {

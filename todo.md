@@ -4,9 +4,10 @@
 - [x] Simple API to connect to mongoDB
 - [ ] Adrinalin frontpage (data from the DB)
   - [ ] header ( needs more tweaks )
-  1. im not sure why class nav, and scrollbar does not work!
-     2.the navigation margin maybe shift to left little bit
+        [] im not sure why class nav, and scrollbar does not work!
+        []the navigation margin maybe shift to left little bit
   - [ ] body
+        [x] fixed the fonts size in global css
   - [ ] footer
 
 > no need to quick, have fun for now.. we will start after you come
