@@ -1,0 +1,82 @@
+/*=====================
+   Short Cuts  
+  =====================*/
+
+.flex {
+	display: flex;
+}
+
+.flex__sb {
+	justify-content: space-between;
+}
+
+.flex__col {
+	flex-direction: column;
+}
+/*=====================
+    
+  =====================*/
+
+.ShoppingCart {
+	width: 428px;
+	height: 44px;
+}
+
+.card {
+	background: #f7fdfc;
+	border-radius: 4px;
+	margin-bottom: 1em;
+	padding: 8px;
+	display: flex;
+}
+
+.card_info {
+	order: 2;
+	margin-left: 12px;
+}
+.card_title {
+	margin: 0.5em;
+}
+.card_description {
+	margin: 0.25em;
+}
+.card_price {
+	display: inline-block;
+	text-decoration: none;
+	background: #f2a359;
+	border-radius: 4px;
+	padding: 0.25em 1.5em;
+	align-self: flex-start;
+	/* price button text */
+	font-weight: 600;
+	font-size: 10px;
+	line-height: 12px;
+	cursor: pointer;
+	border: none;
+}
+
+.card_img {
+	order: 1;
+}
+
+.card_count {
+	margin-left: auto;
+	margin-right: 10px;
+	align-self: center;
+	order: 3;
+}
+.card_counting {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+}
+.card_count_draw {
+	background: #fcfcfc;
+	border: 2px solid #67cecc;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	margin-left: 8px;
+	margin-right: 8px;
+}

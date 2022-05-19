@@ -49,6 +49,7 @@
 body {
 	font-family: var(--ff-primary);
 	background-color: #e5e5e5;
+	margin: 0 auto;
 }
 
 h1 {
@@ -80,12 +81,7 @@ footer {
 	background-color: var(--clr-action);
 	color: var(--fc-white);
 	width: 100%;
-	border-radius: 10px;
-	padding: 0.5em 1em;
+	border-radius: 4px;
+	padding: 16px 36px;
 	margin: 1em auto;
-	justify-content: center;
-	align-items: center;
-	position: fixed;
-	bottom: 0;
-	margin-bottom: 0;
 }

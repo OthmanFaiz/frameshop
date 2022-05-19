@@ -1,7 +1,11 @@
+import Header from '../components/Checkout/Header';
+import ShoppingCart from '../components/Checkout/ShoppingCart';
+
 export default function Checkout() {
 	return (
 		<>
-			<h1>Checkout page !!!</h1>
+			<Header />
+			<ShoppingCart />
 		</>
 	);
 }
