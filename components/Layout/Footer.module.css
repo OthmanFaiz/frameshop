@@ -16,11 +16,26 @@
 /*=====================
     
   =====================*/
-.footer__counting {
+.footer_counting {
+	border: 1px solid white;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	text-align: center;
 }
 .footer__count {
+	font-size: 12px;
+	font-family: var(--ff-primary);
+	font-weight: var(--fw-600);
+	line-height: 22px;
 }
 .footer__price {
+	margin: 0 1em;
+	font-size: 18px;
+	font-family: var(--ff-primary);
+	font-weight: var(--fw-600);
+	line-height: 22px;
 }
 .footer__cart {
+	margin-right: 1em;
 }

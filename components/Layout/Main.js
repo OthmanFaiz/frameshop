@@ -1,7 +1,14 @@
 import classes from './Main.module.css';
 import Image from 'next/image';
+import Link from 'next/link';
 
-export default function Main({ category, items, cart, addToCart, removeFromCart }) {
+export default function Main({
+	category,
+	items,
+	cart,
+	addToCart,
+	removeFromCart,
+}) {
 	return (
 		<>
 			{category.items.map((cat) => (
@@ -14,15 +21,17 @@ export default function Main({ category, items, cart, addToCart, removeFromCart 
 							if (item.category === cat._id) {
 								return (
 									<section key={item._id} className={classes.card}>
-										<div className={classes.card_info}>
-											<h2 className={classes.card_title}>{item.name}</h2>
-											<p className={classes.card_description}>
-												{item.description}
-											</p>
-											<button className={classes.card_price}>
-												{item.price} KWD
-											</button>
-										</div>
+										<Link href='/popout'>
+											<div className={classes.card_info}>
+												<h2 className={classes.card_title}>{item.name}</h2>
+												<p className={classes.card_description}>
+													{item.description}
+												</p>
+												<button className={classes.card_price}>
+													{item.price} KWD
+												</button>
+											</div>
+										</Link>
 										<div className={`${classes.card_count} ${classes.flex} `}>
 											<Image
 												onClick={() => removeFromCart(item)}
@@ -32,7 +41,9 @@ export default function Main({ category, items, cart, addToCart, removeFromCart 
 												height={12}
 											/>
 											<div className={classes.card_count_draw}>
-												<p className={classes.card_counting}>{!cart[item._id] ? 0 : cart[item._id].quantity}</p>
+												<p className={classes.card_counting}>
+													{!cart[item._id] ? 0 : cart[item._id].quantity}
+												</p>
 											</div>
 											<Image
 												onClick={() => addToCart(item)}
