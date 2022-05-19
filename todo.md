@@ -22,6 +22,8 @@
 
 -[] adreline popout layout
 
+-[] adreline checkout layout
+
 ## Back end todo list
 
 - [x] Start with the todo list
