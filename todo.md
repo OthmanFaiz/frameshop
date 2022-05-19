@@ -2,27 +2,27 @@
 
 ## front end todo list
 
--[] adreline front page layout
+- [ ] adreline front page layout
 
 - [ ] header ( needs more tweaks )
-      [] few margin issue for the whole page
-      []the navigation margin maybe shift to left little bit
+      - [ ] few margin issue for the whole page
+      - [ ] the navigation margin maybe shift to left little bit
 
 - [ ] body (little style tweek)
-      [x] fixed the fonts size in global css
-      [X] card layout been made
-      [x] item counter
-      [x] item counter functionallty
-      [x]separte item counter functionallty - bug: when the item is deleted, the counter will not update
-      [] connect item counter to footer
+      - [x] fixed the fonts size in global css
+      - [X] card layout been made
+      - [x] item counter
+      - [x] item counter functionallty
+      - [x] separte item counter functionallty - bug: when the item is deleted, the counter will not update
+      - [ ] connect item counter to footer
 - [ ] footer
-      [x] main footer layout
-      [] footer style tweek
-      [] functionalty for the footer
+      - [x] main footer layout
+      - [ ] footer style tweek
+      - [ ] functionalty for the footer
 
--[] adreline popout layout
+- [ ] adreline popout layout
 
--[] adreline checkout layout
+- [ ] adreline checkout layout
 
 ## Back end todo list
 
