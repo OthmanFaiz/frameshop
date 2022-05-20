@@ -1,0 +1,32 @@
+/*=====================
+   Short Cuts  
+  =====================*/
+
+.flex {
+	display: flex;
+}
+
+.flex__sb {
+	justify-content: space-between;
+}
+
+.flex__col {
+	flex-direction: column;
+}
+/*=====================
+    Payment Layout
+  =====================*/
+
+.title {
+	width: 428px;
+	height: 44px;
+	margin-top: 5em;
+}
+.info {
+	padding-bottom: 0.25em;
+	border-bottom: 1px solid #38afad;
+}
+
+.section {
+	margin-bottom: 1em;
+}

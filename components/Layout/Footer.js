@@ -2,7 +2,16 @@ import classes from './Footer.module.css';
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Footer(category, items, cart) {
+export default function Footer({ category, items, cart }) {
+	console.log(
+		cart.reduce((ac, it) => {
+			ac + it.quantity;
+		}, 0)
+	);
+	// const Total = cart.reduce(
+	// 	(accumulator, item) => accumulator + item.price * item.quantity,
+	// 	0
+	// );
 	return (
 		<Link href='/checkout'>
 			<footer className={classes.flex}>

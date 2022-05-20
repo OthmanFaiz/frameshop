@@ -67,6 +67,12 @@ h2 {
 	line-height: 19px;
 }
 
+h3 {
+	font-size: var(--fs-list);
+	font-family: var(--ff-primary);
+	font-weight: var(--fw-600);
+}
+
 p {
 	font-size: var(--fs-p);
 }
