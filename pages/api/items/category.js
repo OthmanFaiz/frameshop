@@ -17,7 +17,6 @@ export default async function handler(req, res) {
         }
     ];
 	try {
-		// const { id } = req.params
 		const client = await clientPromise;
 		const db = client.db('adrenaline');
 		const items = await db.collection('items').aggregate(agg).toArray();

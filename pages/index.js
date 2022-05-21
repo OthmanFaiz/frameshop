@@ -58,7 +58,7 @@ export default function Home() {
 					addToCart={addToCart}
 					removeFromCart={removeFromCart}
 				/>
-				<Footer cart={cart} items={items} category={category} />
+				<Footer cart={cart} />
 			</>
 		);
 	} else {
