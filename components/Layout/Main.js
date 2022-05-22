@@ -21,7 +21,7 @@ export default function Main({
 							if (item.category === cat._id) {
 								return (
 									<section key={item._id} className={classes.card}>
-										<Link href='/popout'>
+										<Link href='/item'>
 											<div className={classes.card_info}>
 												<h2 className={classes.card_title}>{item.name}</h2>
 												<p className={classes.card_description}>

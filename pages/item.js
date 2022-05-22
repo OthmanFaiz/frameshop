@@ -1,8 +1,8 @@
 // for testing before connect to the component once its clicked
 
-import Header from '../components/popout/Header';
+import Header from '../components/item/Header';
 
-export default function PopoutPage() {
+export default function Item() {
 	return (
 		<>
 			<Header />

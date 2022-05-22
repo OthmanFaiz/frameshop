@@ -1,0 +1,15 @@
+.card {
+	margin: 3em;
+	background-color: #fcfcfc;
+}
+
+.header {
+}
+
+.card_info {
+}
+
+.card_details {
+	background: #f6f7f7;
+	border-radius: 8px;
+}
