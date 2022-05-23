@@ -4,12 +4,16 @@ import Main from '../components/Layout/Main';
 import Footer from '../components/Layout/Footer';
 import AddItem from '../components/Item/AddItem';
 
+import { useCart } from '../lib/CartContext';
+
 import { useState, useEffect } from 'react';
 
 export default function Home() {
 	const [category, setCategory] = useState({});
 	const [items, setItems] = useState([]);
-	const [cart, setCart] = useState({});
+
+	const { cart, setCart } = useCart();
+	
 	const [showAddItem, setShowAddItem] = useState({state: false, item: null});
 
 	useEffect(() => {

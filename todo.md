@@ -39,5 +39,5 @@
 - [x] clean the main page ( delete the plus & minus sign )
 - [x] add functionallty to the add to cart page
 	need's some tweaks ( updating the cart when the item is added )
-- [ ] add functionallty to the checkout page
-	we need to use contextAPI to accesses the state from another rout
+- [x] add functionallty to the checkout page
+	- [x] we need to use contextAPI to accesses the state from another rout
