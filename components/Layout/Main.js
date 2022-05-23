@@ -5,9 +5,8 @@ import Link from 'next/link';
 export default function Main({
 	category,
 	items,
-	cart,
-	addToCart,
-	removeFromCart,
+	showAddItemModal,
+	cart
 }) {
 	return (
 		<>
@@ -21,9 +20,11 @@ export default function Main({
 							if (item.category === cat._id) {
 								return (
 									<section key={item._id} className={classes.card}>
-										<Link href='/item'>
-											<div className={classes.card_info}>
-												<h2 className={classes.card_title}>{item.name}</h2>
+											<div className={classes.card_info} onClick={() => showAddItemModal(true, item._id)}>
+												<h2 className={classes.card_title}>
+												{cart[item._id] && <span className={classes.small}>x{cart[item._id].quantity} </span>}
+													{item.name}
+												</h2>
 												<p className={classes.card_description}>
 													{item.description}
 												</p>
@@ -31,28 +32,6 @@ export default function Main({
 													{item.price} KWD
 												</button>
 											</div>
-										</Link>
-										<div className={`${classes.card_count} ${classes.flex} `}>
-											<Image
-												onClick={() => removeFromCart(item)}
-												src='/images/svg/minus.svg'
-												alt=''
-												width={12}
-												height={12}
-											/>
-											<div className={classes.card_count_draw}>
-												<p className={classes.card_counting}>
-													{!cart[item._id] ? 0 : cart[item._id].quantity}
-												</p>
-											</div>
-											<Image
-												onClick={() => addToCart(item)}
-												src='/images/svg/plus.svg'
-												alt=''
-												width={12}
-												height={12}
-											/>
-										</div>
 										<Image
 											src='/images/test.jpg'
 											alt=''

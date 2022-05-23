@@ -1,0 +1,44 @@
+.flex {
+	display: flex;
+}
+.card {
+	position: fixed;
+	z-index: 10000;
+	top: 10vh;
+	left:10vw;
+	right: 10vw;
+	width: 80%;
+	height: 80%;
+	background-color: #fcfcfc;
+}
+
+.card_count {
+	margin-left: auto;
+	margin-right: 10px;
+	align-self: center;
+	order: 3;
+}
+.card_counting {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 19px;
+}
+.card_count_draw {
+	background: #fcfcfc;
+	border: 2px solid #67cecc;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	text-align: center;
+	margin-left: 8px;
+	margin-right: 8px;
+}
+
+.add {
+	background-color: #67cecc;
+	border-radius: 5px;
+	margin-top: 10px;
+	color: #fcfcfc;
+	text-align: center;
+	cursor: pointer;
+}

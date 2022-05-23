@@ -36,6 +36,8 @@
 - [ ] Adrinalin frontpage (data from the DB)
 
 ### 23 - 5 - 2022 " Othman "
-- [ ] clean the main page ( delete the plus & minus sign )
-- [ ] add functionallty to the add to cart page
+- [x] clean the main page ( delete the plus & minus sign )
+- [x] add functionallty to the add to cart page
+	need's some tweaks ( updating the cart when the item is added )
 - [ ] add functionallty to the checkout page
+	we need to use contextAPI to accesses the state from another rout

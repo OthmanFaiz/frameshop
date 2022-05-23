@@ -90,3 +90,10 @@
 	margin-left: 8px;
 	margin-right: 8px;
 }
+
+
+.small {
+	color: #f2a359;
+	font-size: 12px;
+	font-weight: 600;
+}

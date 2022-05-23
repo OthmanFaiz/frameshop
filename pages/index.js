@@ -2,6 +2,7 @@ import Head from 'next/head';
 import Headers from '../components/Layout/Header';
 import Main from '../components/Layout/Main';
 import Footer from '../components/Layout/Footer';
+import AddItem from '../components/Item/AddItem';
 
 import { useState, useEffect } from 'react';
 
@@ -9,6 +10,7 @@ export default function Home() {
 	const [category, setCategory] = useState({});
 	const [items, setItems] = useState([]);
 	const [cart, setCart] = useState({});
+	const [showAddItem, setShowAddItem] = useState({state: false, item: null});
 
 	useEffect(() => {
 		fetch('http://localhost:3000/api/items/category')
@@ -21,26 +23,14 @@ export default function Home() {
 	}, []);
 
 	const addToCart = (item) => {
-		if (!cart[item._id]) {
-			setCart({ ...cart, [item._id]: { ...item, quantity: 1 } });
-		} else {
-			setCart({
-				...cart,
-				[item._id]: { ...item, quantity: cart[item._id].quantity + 1 },
-			});
-		}
-	};
+		setCart({...cart, [item._id]: {...item}});
+		setShowAddItem({state: false, item: null});
+	}
+	
 
-	const removeFromCart = (item) => {
-		if (cart[item._id].quantity > 1) {
-			setCart({
-				...cart,
-				[item._id]: { ...item, quantity: cart[item._id].quantity - 1 },
-			});
-		} else {
-			delete cart[item._id];
-		}
-	};
+	const showAddItemModal = (state, itemId) => {
+		setShowAddItem({ state, item: itemId });
+	}
 
 	if (Object.entries(category).length > 0 && Object.entries(items).length > 0) {
 		return (
@@ -51,12 +41,12 @@ export default function Home() {
 
 				{/* Components */}
 				<Headers category={category} />
+				{showAddItem.state && <AddItem showAddItemModal={showAddItemModal} item={items.items.find(item => item._id === showAddItem.item)} showAddItem={showAddItem} addToCart={addToCart} />}
 				<Main
-					cart={cart}
 					category={category}
 					items={items}
-					addToCart={addToCart}
-					removeFromCart={removeFromCart}
+					cart={cart}
+					showAddItemModal={showAddItemModal}
 				/>
 				<Footer cart={cart} />
 			</>
