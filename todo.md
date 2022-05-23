@@ -34,3 +34,8 @@
 - [x] Start with the todo list
 - [x] Simple API to connect to mongoDB
 - [ ] Adrinalin frontpage (data from the DB)
+
+### 23 - 5 - 2022 " Othman "
+- [ ] clean the main page ( delete the plus & minus sign )
+- [ ] add functionallty to the add to cart page
+- [ ] add functionallty to the checkout page
