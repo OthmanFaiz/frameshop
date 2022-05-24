@@ -1,4 +1,4 @@
-{
+[{
     "_id": {
         "$oid": "6265daa5bb511fa9666e6da0"
     },
@@ -15,3 +15,45 @@
 	"date_added": "new Date()",
     "image": ["urlpath","urlpath","urlpath"]
 }
+,{
+    "_id": {
+      "$oid": "628cfb7459829a5c6f67ccd0"
+    },
+    "name": "Al-Nizha",
+    "phone": "0123456789",
+    "address": "Kuwait City, Al-Nizha Block 1, Al-Nizha Street, Al-Nizha, Kuwait",
+    "coordinates": {
+      "lat": 29.366667,
+      "lng": 47.966667
+    },
+    "working_hours": {
+      "sunday": {
+        "open": "08:00",
+        "close": "20:00"
+      },
+      "monday": {
+        "open": "08:00",
+        "close": "20:00"
+      },
+      "tuesday": {
+        "open": "08:00",
+        "close": "20:00"
+      },
+      "wednesday": {
+        "open": "08:00",
+        "close": "20:00"
+      },
+      "thursday": {
+        "open": "08:00",
+        "close": "20:00"
+      },
+      "friday": {
+        "open": "08:00",
+        "close": "20:00"
+      },
+      "saturday": {
+        "open": "08:00",
+        "close": "20:00"
+      }
+    }
+  }]

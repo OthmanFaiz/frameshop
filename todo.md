@@ -46,3 +46,10 @@
 - [x] add functionallty to the checkout page
   - [x] we need to use contextAPI to accesses the state from another rout
 - [] collect the data from react form and add them to database
+
+
+### 24 - 5 - 2022 " Othman "
+- [x] add locations to the database
+- [x] locations page
+	- [ ] style the page
+- [ ] Order history page
