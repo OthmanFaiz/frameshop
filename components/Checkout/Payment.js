@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 import { useCart } from '../../lib/CartContext';
 
-export default function Payment() {
+export default function Payment(props) {
 	const { cart } = useCart();
 	const [totalPrice, setTotalPrice] = useState(0);
 	useEffect(() => {
@@ -57,8 +57,8 @@ export default function Payment() {
 			Floor: entered_Floor,
 			Apartment: entered_Apartment,
 		};
-
 		console.log(AddressData);
+		props.AddAddressData(AddressData);
 	}
 	return (
 		<>
