@@ -25,6 +25,17 @@
 .info {
 	padding-bottom: 0.25em;
 	border-bottom: 1px solid #38afad;
+	margin-bottom: 1.25em;
+}
+.Payment {
+	width: 100%;
+	flex-direction: column;
+}
+.section {
+	width: 100%;
+	margin-bottom: 1em;
+	display: flex;
+	justify-content: space-between;
 }
 
 .price {
@@ -79,22 +90,23 @@
 
 .actions {
 	margin-top: 1rem;
-	text-align: right;
+	text-align: center;
 }
 
 .actions button {
+	width: 100%;
 	font: inherit;
 	cursor: pointer;
-	background-color: #77002e;
+	background-color: var(--clr-action);
 	color: white;
 	padding: 0.5rem 1.5rem;
-	border: 1px solid #77002e;
+	border: none;
 	border-radius: 4px;
 	font-weight: bold;
 }
 
 .actions button:hover,
 .actions button:active {
-	background-color: #a50e48;
-	border-color: #a50e48;
+	background-color: #da9022; /* Green */
+	color: white;
 }

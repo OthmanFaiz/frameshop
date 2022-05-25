@@ -1,5 +1,5 @@
 import classes from './Payment.module.css';
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Image from 'next/image';
 
 import { useCart } from '../../lib/CartContext';
@@ -19,12 +19,53 @@ export default function Payment() {
 			);
 		}
 	}, [cart]);
+	// form ref
+	const AddressTypeRef = useRef();
+	const AddressNameRef = useRef();
+	const PhoneNumberRef = useRef();
+	const TownRef = useRef();
+	const BlockRef = useRef();
+	const StreetRef = useRef();
+	const LaneRef = useRef();
+	const HouseRef = useRef();
+	const FloorRef = useRef();
+	const ApartmentRef = useRef();
+	//
+	// form handler
+	function submitHandler(event) {
+		event.preventDefault();
+		const entered_AddressType = AddressTypeRef.current.value;
+		const entered_AddressName = AddressNameRef.current.value;
+		const entered_PhoneNumber = PhoneNumberRef.current.value;
+		const entered_Town = TownRef.current.value;
+		const entered_Block = BlockRef.current.value;
+		const entered_Street = StreetRef.current.value;
+		const entered_Lane = LaneRef.current.value;
+		const entered_House = HouseRef.current.value;
+		const entered_Floor = FloorRef.current.value;
+		const entered_Apartment = ApartmentRef.current.value;
+
+		const AddressData = {
+			AddressType: entered_AddressType,
+			AddressName: entered_AddressName,
+			PhoneNumber: entered_PhoneNumber,
+			Town: entered_Town,
+			Block: entered_Block,
+			Street: entered_Street,
+			Lane: entered_Lane,
+			House: entered_House,
+			Floor: entered_Floor,
+			Apartment: entered_Apartment,
+		};
+
+		console.log(AddressData);
+	}
 	return (
 		<>
 			<section className={classes.title}>
 				<h1 className={classes.info}>Payment</h1>
 
-				<div className={`${classes.flex} ${classes.flex__col}`}>
+				<div className={`${classes.flex} ${classes.Payment}`}>
 					<div className={classes.section}>
 						<h3>subtitle</h3>
 						<h3>{totalPrice.toFixed(2)} KWD</h3>
@@ -33,21 +74,21 @@ export default function Payment() {
 						<h3>Delivery</h3>
 						<h3>1.000 KWD</h3>
 					</div>
-					<div className={classes.price}>
+					<div className={classes.section}>
 						<h1>Total Amount</h1>
 						<h1>{(totalPrice + 1).toFixed(2)} KWD</h1>
 					</div>
 				</div>
 
 				<section className={classes.Section_specialRequest}>
-					<h1 className={classes.info}>Speical request</h1>
-					<textarea className={classes.specialRequest_textarea}>e</textarea>
+					<h1 className={classes.info}>Special Request</h1>
+					<textarea className={classes.specialRequest_textarea}></textarea>
 				</section>
 
 				<section className={classes.Section_form}>
 					<h1 className={classes.info}>Your Address</h1>
-
-					<form className={classes.form}>
+					{/* form section */}
+					<form className={classes.form} onSubmit={submitHandler}>
 						<div className={classes.control}>
 							<label htmlFor='AddressType'></label>
 							<input
@@ -55,6 +96,7 @@ export default function Payment() {
 								required
 								id='AddressType'
 								placeholder='Address type'
+								ref={AddressTypeRef}
 							></input>
 						</div>
 						<div className={classes.control}>
@@ -64,6 +106,7 @@ export default function Payment() {
 								required
 								id='AddressName'
 								placeholder='Address Name'
+								ref={AddressNameRef}
 							></input>
 						</div>
 						<div className={classes.control}>
@@ -73,11 +116,18 @@ export default function Payment() {
 								required
 								id='PhoneNumber'
 								placeholder='Phone Number'
+								ref={PhoneNumberRef}
 							></input>
 						</div>
 						<div className={classes.control}>
 							<label htmlFor='Town'></label>
-							<input type='text' required id='Town' placeholder='Town'></input>
+							<input
+								type='text'
+								required
+								id='Town'
+								placeholder='Town'
+								ref={TownRef}
+							></input>
 						</div>
 						<div className={classes.control}>
 							<label htmlFor='Block'></label>
@@ -86,6 +136,7 @@ export default function Payment() {
 								required
 								id='Block'
 								placeholder='Block'
+								ref={BlockRef}
 							></input>
 						</div>{' '}
 						<div className={classes.control}>
@@ -95,15 +146,16 @@ export default function Payment() {
 								required
 								id='Street'
 								placeholder='Street'
+								ref={StreetRef}
 							></input>
 						</div>{' '}
 						<div className={classes.control}>
 							<label htmlFor='Lane'></label>
 							<input
 								type='text'
-								required
 								id='Lane'
 								placeholder='Lane(optional)'
+								ref={LaneRef}
 							></input>
 						</div>{' '}
 						<div className={classes.control}>
@@ -113,25 +165,29 @@ export default function Payment() {
 								required
 								id='House'
 								placeholder='House/Building'
+								ref={HouseRef}
 							></input>
 						</div>{' '}
 						<div className={classes.control}>
 							<label htmlFor='Floor'></label>
 							<input
 								type='text'
-								required
 								id='Floor'
 								placeholder='Floor'
+								ref={FloorRef}
 							></input>
 						</div>{' '}
 						<div className={classes.control}>
 							<label htmlFor='Apartment'></label>
 							<input
 								type='text'
-								required
 								id='Apartment'
 								placeholder='Apartment'
+								ref={ApartmentRef}
 							></input>
+						</div>
+						<div className={classes.actions}>
+							<button> checkout</button>
 						</div>
 					</form>
 				</section>
