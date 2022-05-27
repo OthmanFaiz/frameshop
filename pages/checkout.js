@@ -4,7 +4,7 @@ import ShoppingCart from '../components/Checkout/ShoppingCart';
 
 export default function Checkout() {
 	async function addressHandler(AddressData) {
-		const response = await fetch('Adresses', {
+		const response = await fetch('http://localhost:3000/api/neworder', {
 			method: 'POST',
 			body: JSON.stringify(AddressData),
 			headers: {

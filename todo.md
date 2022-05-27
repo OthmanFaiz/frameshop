@@ -53,3 +53,9 @@
 - [x] locations page
 	- [ ] style the page
 - [ ] Order history page
+
+### 27 - 5 - 2022 " Othman "
+- [x] users Collection
+- [x] orders Collection
+- [x] new oreder api
+- [x] new order functionallty

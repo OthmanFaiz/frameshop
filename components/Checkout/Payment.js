@@ -57,8 +57,7 @@ export default function Payment(props) {
 			Floor: entered_Floor,
 			Apartment: entered_Apartment,
 		};
-		console.log(AddressData);
-		props.AddAddressData(AddressData);
+		props.AddAddressData({AddressData, cart, registered: false});
 	}
 	return (
 		<>

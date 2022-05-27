@@ -56,4 +56,29 @@
         "close": "20:00"
       }
     }
+  },{
+    "_id": {
+      "$oid": "6291205e59829a5c6f67ccd9"
+    },
+    "username": "most3mr",
+    "name": "Othman Al-Omair",
+    "password": "password",
+    "email": "email@email.com",
+    "phone": "0123456789",
+    "address": [
+      {
+        "type": "House",
+        "name": "My House",
+        "street": "Al-Nizha Street",
+        "block": "Al-Nizha Block 1",
+        "builing_number": "1",
+        "floor_number": "1",
+        "apartment_number": "1"
+      }
+    ],
+    "signup_date": {
+      "$date": {
+        "$numberLong": "1653685200000"
+      }
+    }
   }]
