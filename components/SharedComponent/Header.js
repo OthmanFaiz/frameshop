@@ -8,7 +8,12 @@ export default function Header() {
 			<div className={`${classes.header} ${classes.flex}`}>
 				<Link href='/'>
 					<div className={classes.arrow}>
-						<Image src='/images/arrow.png' alt='' width={24} height={24} />
+						<Image
+							src='/images/svg/arrow-left.svg'
+							alt=''
+							width={24}
+							height={24}
+						/>
 					</div>
 				</Link>
 				<div className={classes.hero__logo}>

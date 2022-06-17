@@ -2,12 +2,7 @@
 
 ## front end todo list
 
-- [ ] adreline front page layout
-
-- [ ] header ( needs more tweaks )
-
-  - [ ] few margin issue for the whole page
-  - [ ] the navigation margin maybe shift to left little bit
+- [ ] adreline front page layout -[ ] humber menu must be fixed
 
 - [ ] body (little style tweek)
 
@@ -18,14 +13,13 @@
   - [x] separte item counter functionallty
         bug: when the item is deleted, the counter will not update
   - [x] connect item counter to footer
+  - [ ] card element (when cickled) must the pic be displayed
 
 - [x] footer
 
   - [x] main footer layout
-  - [ ] footer style tweek
+  - [x] footer style tweek
   - [x] functionalty for the footer
-
-- [ ] adreline popout layout
 
 - [ ] adreline checkout layout
   - [ ] main layout jxs
@@ -47,14 +41,15 @@
   - [x] we need to use contextAPI to accesses the state from another rout
 - [] collect the data from react form and add them to database
 
-
 ### 24 - 5 - 2022 " Othman "
+
 - [x] add locations to the database
 - [x] locations page
-	- [ ] style the page
+  - [ ] style the page
 - [ ] Order history page
 
 ### 27 - 5 - 2022 " Othman "
+
 - [x] users Collection
 - [x] orders Collection
 - [x] new oreder api

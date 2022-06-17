@@ -57,7 +57,7 @@ export default function Payment(props) {
 			Floor: entered_Floor,
 			Apartment: entered_Apartment,
 		};
-		props.AddAddressData({AddressData, cart, registered: false});
+		props.AddAddressData({ AddressData, cart, registered: false });
 	}
 	return (
 		<>
@@ -187,6 +187,13 @@ export default function Payment(props) {
 						</div>
 						<div className={classes.actions}>
 							<button> checkout</button>
+							<Image
+								src='/images/svg/outline-payments.svg'
+								alt=''
+								width={109}
+								height={36}
+								className={classes.Image}
+							/>
 						</div>
 					</form>
 				</section>

@@ -1,4 +1,4 @@
-import Header from '../components/Checkout/Header';
+import Header from '../components/SharedComponent/Header';
 import Locations from '../components/Locations/Locations';
 
 export default function Adresses() {

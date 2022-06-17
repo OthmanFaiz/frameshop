@@ -2,7 +2,7 @@
    Short Cuts  
   =====================*/
 
-  .flex {
+.flex {
 	display: flex;
 }
 
@@ -27,6 +27,12 @@
 	margin-bottom: 1em;
 	padding: 8px;
 	display: flex;
+}
+
+.info {
+	padding-bottom: 0.25em;
+	border-bottom: 1px solid #38afad;
+	margin-bottom: 1.25em;
 }
 
 .card_info {
@@ -78,4 +84,31 @@
 	text-align: center;
 	margin-left: 8px;
 	margin-right: 8px;
+}
+
+/* buttons */
+.buttons {
+	margin-top: 1em;
+	text-align: center;
+	width: 100%;
+	padding: 0.5rem 1.5rem;
+	display: flex;
+	border-radius: 5px;
+}
+
+.buttons .button {
+	display: flex;
+	cursor: pointer;
+	padding: 0.25rem 0.75rem;
+	margin: 0 0.5em;
+	border: none;
+	border-radius: 4px;
+	color: white;
+	background-color: var(--clr-action);
+}
+
+.buttons button:hover,
+.buttons button:active {
+	background-color: #da9022; /* Green */
+	color: white;
 }
