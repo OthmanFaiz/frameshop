@@ -2,7 +2,8 @@
 
 ## front end todo list
 
-- [ ] adreline front page layout -[ ] humber menu must be fixed
+- [ ] adreline front page layout
+- [ ] humber menu must be fixed
 
 - [ ] body (little style tweek)
 
@@ -39,7 +40,7 @@
       need's some tweaks ( updating the cart when the item is added )
 - [x] add functionallty to the checkout page
   - [x] we need to use contextAPI to accesses the state from another rout
-- [] collect the data from react form and add them to database
+- [ ] collect the data from react form and add them to database
 
 ### 24 - 5 - 2022 " Othman "
 
