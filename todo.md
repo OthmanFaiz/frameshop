@@ -2,8 +2,7 @@
 
 ## front end todo list
 
-- [ ] adreline front page layout
-- [ ] humber menu must be fixed
+- [ ] adreline front page layout -[ ] humber menu must be fixed
 
 - [ ] body (little style tweek)
 
@@ -23,9 +22,9 @@
   - [x] functionalty for the footer
 
 - [ ] adreline checkout layout
-  - [ ] main layout jxs
-  - [ ] beta css style
-  - [ ] react form for the address
+  - [x] main layout jxs
+  - [x] beta css style
+  - [x] react form for the address
 
 ## Back end todo list
 
@@ -40,7 +39,7 @@
       need's some tweaks ( updating the cart when the item is added )
 - [x] add functionallty to the checkout page
   - [x] we need to use contextAPI to accesses the state from another rout
-- [ ] collect the data from react form and add them to database
+- [] collect the data from react form and add them to database
 
 ### 24 - 5 - 2022 " Othman "
 
@@ -55,3 +54,16 @@
 - [x] orders Collection
 - [x] new oreder api
 - [x] new order functionallty
+
+### " Othman "
+
+- [] fix the first page css
+- [] fix the hamburger menu in first page
+- [] generate random id for each order
+- [] make plain in ur ipad how to tackle the lawhat tahakom
+
+### " Ahmad "
+
+- [] do the sign in form
+- [] sign up form
+- [] and there css
