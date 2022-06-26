@@ -9,40 +9,42 @@ export default function Headers({ category }) {
 	}
 	return (
 		<header className={`${classes.flex} ${classes.flex__col}`}>
-			<div className={`${classes.nav} ${classes.hero}`}>
-				<div className={classes.hero__menu}>
-					{/* https://www.npmjs.com/package/react-burger-menu   sexy npm package */}
-					<Menu
-						width={'100%'}
-						customBurgerIcon={<img src='/images/svg/burger.svg' />}
-					>
-						<Link href='/signIn'>
-							<h4 id='home' className='menu-item' href='/'>
-								sign in
-							</h4>
-						</Link>
-						<a id='about' className='menu-item' href='/about'>
-							branches
-						</a>
-						<a id='contact' className='menu-item' href='/contact'>
-							Contact
-						</a>
-						<a onClick={showSettings} className='menu-item--small' href=''>
-							Settings
-						</a>
-					</Menu>
-				</div>
-				<div className={classes.hero__logo}>
-					<Image src='/images/svg/logo.svg' alt='' width={109} height={36} />
-				</div>
-				<div className={classes.hero__search}>
-					<Image
-						className={classes.hero_size}
-						src='/images/svg/search.svg'
-						alt=''
-						width={24}
-						height={24}
-					/>
+			<div className={`${classes.hero}`}>
+				<div className={`${classes.nav} ${classes.flex} ${classes.flex__sb}`}>
+					<div className={classes.hero__menu}>
+						{/* https://www.npmjs.com/package/react-burger-menu   sexy npm package */}
+						<Menu
+							width={'100%'}
+							customBurgerIcon={<img src='/images/svg/burger.svg' />}
+						>
+							<Link href='/signIn'>
+								<h4 id='home' className='menu-item' href='/'>
+									sign in
+								</h4>
+							</Link>
+							<a id='about' className='menu-item' href='/about'>
+								branches
+							</a>
+							<a id='contact' className='menu-item' href='/contact'>
+								Contact
+							</a>
+							<a onClick={showSettings} className='menu-item--small' href=''>
+								Settings
+							</a>
+						</Menu>
+					</div>
+					<div className={classes.hero__logo}>
+						<Image src='/images/svg/logo.svg' alt='' width={109} height={36} />
+					</div>
+					<div className={classes.hero__search}>
+						<Image
+							className={classes.hero_size}
+							src='/images/svg/search.svg'
+							alt=''
+							width={24}
+							height={24}
+						/>
+					</div>
 				</div>
 			</div>
 

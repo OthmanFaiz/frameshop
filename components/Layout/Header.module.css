@@ -18,56 +18,50 @@
   =====================*/
 .nav {
 	height: 44px;
-	padding: 10px 4px;
-	background-color: var(--clr-primary);
+	width: 100%;
+	background-color: #67CECC;
+	margin: 0;
+	align-items: center;
+	justify-items: center;
 }
 
 .hero {
 	display: flex;
 	justify-content: space-between;
-
 	margin: 0 auto;
 	background-image: url('/images/hero.png');
 	background-position: center;
 	background-size: cover;
-	filter: drop-shadow(0px 1px 4px #67cecc);
 	min-height: 164px;
 	width: 100%;
 }
 
 .hero__logo {
 	align-self: flex-start;
-	margin-top: 15px;
-	margin-bottom: 1em;
-}
-
-.hero__logo_size {
-	min-height: 50px;
-	width: 100%;
+	margin-top: 4px;
 }
 
 .hero__menu {
-	margin-left: 1em;
-	margin-top: 15px;
-	cursor: pointer;
+	margin-left: 14px;
 }
 
 .hero__search {
-	margin-right: 1em;
-	margin-top: 15px;
 	cursor: pointer;
+	margin-right: 14px;
 }
 
-.scorllbar {
+.scrollbar {
+	margin-top: 6px;
 }
 
 .scorllbar__item {
 	background: var(--clr-primary);
 	border-radius: 7px;
-	margin: 0 1em;
+	margin: 0;
+	margin-right: 16px;
 	cursor: pointer;
 	white-space: nowrap;
-	padding: 0.5em 1.5em;
+	padding: 8px 16px;
 }
 
 .scorllbar__text {

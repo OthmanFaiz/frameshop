@@ -39,7 +39,7 @@
       need's some tweaks ( updating the cart when the item is added )
 - [x] add functionallty to the checkout page
   - [x] we need to use contextAPI to accesses the state from another rout
-- [] collect the data from react form and add them to database
+- [ ] collect the data from react form and add them to database
 
 ### 24 - 5 - 2022 " Othman "
 
@@ -57,13 +57,13 @@
 
 ### " Othman "
 
-- [] fix the first page css
-- [] fix the hamburger menu in first page
-- [] generate random id for each order
-- [] make plain in ur ipad how to tackle the lawhat tahakom
+- [ ] fix the first page css ( im on it 26-6-2022 , fixed the header layout tommorow the rest of the page will be fixed )
+- [ ] fix the hamburger menu in first page
+- [ ] generate random id for each order
+- [ ] make plain in ur ipad how to tackle the lawhat tahakom
 
 ### " Ahmad "
 
-- [] do the sign in form
-- [] sign up form
-- [] and there css
+- [ ] do the sign in form
+- [ ] sign up form
+- [ ] and there css
