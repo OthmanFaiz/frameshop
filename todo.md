@@ -57,7 +57,7 @@
 
 ### " Othman "
 
-- [ ] fix the first page css ( im on it 26-6-2022 , fixed the header layout tommorow the rest of the page will be fixed )
+- [x] fix the first page css ( im on it 26-6-2022 , fixed the header layout tommorow the rest of the page will be fixed )
 - [ ] fix the hamburger menu in first page
 - [ ] generate random id for each order
 - [ ] make plain in ur ipad how to tackle the lawhat tahakom

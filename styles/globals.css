@@ -30,13 +30,15 @@
 	/* font style  */
 	--fs-title: 20px;
 	--fs-dish: 16px;
-	--fs-list: 12;
+	--fs-list: 14px;
+	--fs-discription: 12px;
 	--fs-p: 8px;
 
 	/* font color  */
-	--fc-primary: #121212;
+	--fc-primary: #181919;
 	--fc-accent: #999999;
 	--fc-white: #ffffff;
+	--fc-neutral: #C3C7C7;
 
 	/* background color */
 	--clr-primary: #67cecc;
@@ -48,7 +50,7 @@
   =====================*/
 body {
 	font-family: var(--ff-primary);
-	background-color: #E5E5E5;
+	background-color: #F6F7F7;
 	margin: 0 auto;
 }
 
@@ -61,7 +63,7 @@ h1 {
 
 h2 {
 	font-size: var(--fs-dish);
-	font-family: var(--ff-secondary);
+	font-family: var(--ff-primary);
 	font-weight: var(--fw-400);
 	font-size: var(--fs-dish);
 	line-height: 19px;
@@ -86,9 +88,7 @@ footer {
 	cursor: pointer;
 	background-color: var(--clr-action);
 	color: var(--fc-white);
-	width: 100%;
 	border-radius: 4px;
 	padding: 16px 36px;
 	margin: 1em auto;
-	width: 450px;
 }

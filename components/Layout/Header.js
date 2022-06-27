@@ -13,7 +13,7 @@ export default function Headers({ category }) {
 				<div className={`${classes.nav} ${classes.flex} ${classes.flex__sb}`}>
 					<div className={classes.hero__menu}>
 						{/* https://www.npmjs.com/package/react-burger-menu   sexy npm package */}
-						<Menu
+						{/* <Menu
 							width={'100%'}
 							customBurgerIcon={<img src='/images/svg/burger.svg' />}
 						>
@@ -31,7 +31,7 @@ export default function Headers({ category }) {
 							<a onClick={showSettings} className='menu-item--small' href=''>
 								Settings
 							</a>
-						</Menu>
+						</Menu> */}
 					</div>
 					<div className={classes.hero__logo}>
 						<Image src='/images/svg/logo.svg' alt='' width={109} height={36} />

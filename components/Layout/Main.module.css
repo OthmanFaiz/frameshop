@@ -20,6 +20,7 @@
 
 .story {
 	margin: 1em 0.5em;
+	margin-bottom: 0;
 }
 
 .story_title {
@@ -33,7 +34,7 @@
 	padding: 8px;
 }
 .card {
-	background: #f7fdfc;
+	background: #F7FDFC;
 	border-radius: 4px;
 	margin-bottom: 1em;
 	padding: 8px;
@@ -45,22 +46,29 @@
 	margin-left: 12px;
 }
 .card_title {
-	margin: 0.5em;
+	margin: 0;
+	margin-bottom: 4px;
 }
 .card_description {
-	margin: 0.25em;
+	margin: 0;
+	font-size: var(--fs-discription);
+	color: var(--fc-neutral);
 }
 .card_price {
+	margin-top: 16px;
 	display: inline-block;
 	text-decoration: none;
 	background: #f2a359;
 	border-radius: 4px;
-	padding: 0.25em 1.5em;
+	padding: 4px 8px;
 	align-self: flex-start;
 	/* price button text */
+	font-family: var(--ff-primary);
 	font-weight: 600;
 	font-size: 10px;
+	color: var(--fc-primary);
 	line-height: 12px;
+	letter-spacing: 0.08em;
 	cursor: pointer;
 	border: none;
 }

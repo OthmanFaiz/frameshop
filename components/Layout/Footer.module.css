@@ -4,10 +4,12 @@
 
 .flex {
 	display: flex;
+	width: 95%;
+	align-items: center;
+	margin-top: 14px;
 }
 
 .flex__sb {
-	justify-content: space-between;
 }
 
 .flex__col {
@@ -22,8 +24,7 @@
 	width: 24px;
 	height: 24px;
 	text-align: center;
-
-	margin-left: 7em;
+	margin-right: 16px;
 }
 .footer__count {
 	font-size: 12px;
@@ -39,5 +40,5 @@
 	line-height: 22px;
 }
 .footer__cart {
-	margin-right: 7em;
+	margin-left: 16px;
 }

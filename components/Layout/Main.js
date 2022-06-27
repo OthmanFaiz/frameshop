@@ -29,7 +29,7 @@ export default function Main({
 													{item.description}
 												</p>
 												<button className={classes.card_price}>
-													{item.price} KWD
+													{item.price.toFixed(2)} KWD
 												</button>
 											</div>
 										<Image
