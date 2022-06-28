@@ -59,11 +59,14 @@
 
 - [x] fix the first page css ( im on it 26-6-2022 , fixed the header layout tommorow the rest of the page will be fixed )
 - [ ] fix the hamburger menu in first page
-- [ ] generate random id for each order
-- [ ] make plain in ur ipad how to tackle the lawhat tahakom
+- [x] generate random id for each order
+- [ ] take my signin and signup form to the back end
+- [ ] location page (toggle icon, map when click on location) and the css
+- [ ] make plan in ur ipad how to tackle the lawhat tahakom
 
 ### " Ahmad "
 
-- [ ] do the sign in form
-- [ ] sign up form
-- [ ] and there css
+- [x] do the sign in form
+- [x] sign up form
+- [] and there css
+- [ ] fix the checkout page css
