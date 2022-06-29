@@ -73,3 +73,57 @@
 }
 
 /* hamburger menu */
+
+.hm_logo {
+	position: fixed;
+	top: 8px;
+	left: 16px;
+}
+
+.hm_home {
+	margin-top: 30px;
+	flex-direction: row;
+	align-items: center;
+	border-bottom: 2px solid #EAEBEB ;
+	padding-bottom: 24px;
+	margin-bottom: 24px;
+}
+
+.hm_item {
+	margin-left: 15px;
+	font-size: 34px;
+	font-weight: 700;
+	cursor: pointer;
+}
+
+.hm_li {
+	flex-direction: row;
+	align-items: center;
+	margin-bottom: 24px;
+}
+
+.hm_signup {
+	margin-top: 96px;
+	width: 319px;
+	height: 80px;
+	background: #3460DC;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.hm_signuptext {
+	font-size: 28px;
+	line-height: 34px;
+	letter-spacing: -0.02em;
+	font-weight: 700;
+}
+
+.hm_social {
+	margin-top: 100px;
+}
+
+.social_items {
+	cursor: pointer;
+}

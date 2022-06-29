@@ -5,10 +5,6 @@ import Link from 'next/link';
 import { useState } from 'react';
 
 export default function Headers({ category }) {
-	function showSettings(event) {
-		event.preventDefault();
-	}
-
 	const [showMenu, setShowMenu] = useState(false);
 
 	function handleOnOpen() {
@@ -16,25 +12,22 @@ export default function Headers({ category }) {
 	}
 
 	const hmstyles = {
-		bmBurgerButton: {
-		  position: 'fixed',
-		  width: '36px',
-		  height: '30px',
-		  left: '36px',
-		  top: '36px'
-		},
-		bmBurgerBars: {
-		  background: '#373a47'
-		},
-		bmBurgerBarsHover: {
-		  background: '#a90000'
-		},
+		// bmBurgerButton: {
+		//   position: 'fixed',
+		//   width: '36px',
+		//   height: '30px',
+		//   left: '36px',
+		//   top: '36px'
+		// },
+		// bmBurgerBars: {
+		//   background: '#373a47'
+		// },
+		// bmBurgerBarsHover: {
+		//   background: '#a90000'
+		// },
 		bmCrossButton: {
-		  height: '24px',
-		  width: '24px'
-		},
-		bmCross: {
-		  background: '#bdc3c7'
+		  height: '32px',
+		  width: '32px'
 		},
 		bmMenuWrap: {
 		  position: 'fixed',
@@ -56,8 +49,7 @@ export default function Headers({ category }) {
 		  padding: '0.8em'
 		},
 		bmItem: {
-		  display: 'block'
-
+		  display: 'flex'
 		},
 		bmOverlay: {
 		  background: 'rgba(0, 0, 0, 0.3)'
@@ -79,23 +71,61 @@ export default function Headers({ category }) {
 							onClick={handleOnOpen}
 						/>
 						{showMenu && (
-						<Menu styles={hmstyles} isOpen={showMenu}
+						<Menu customCrossIcon={<Image src={'/images/svg/x.svg'} alt='' width={32} height={32} />} styles={hmstyles} isOpen={showMenu}
 						onStateChange={() => handleOnOpen()}
 						>
-							<Link href='/signIn'>
-								<h4 id='home' className='menu-item' href='/'>
-									sign in
-								</h4>
-							</Link>
-							<a id='about' className='menu-item' href='/about'>
-								branches
-							</a>
-							<a id='contact' className='menu-item' href='/contact'>
-								Contact
-							</a>
-							<a onClick={showSettings} className='menu-item--small' href=''>
-								Settings
-							</a>
+							<div className={classes.hm_logo}>
+								<Image src={'/images/svg/logo.svg'} alt='' width={109} height={36} />
+							</div>
+
+							<div className={classes.hm_home}>
+								<Image src={'/images/svg/home.svg'} alt='' width={32} height={32} />
+								<Link href='/'>
+									<h4 onClick={() => handleOnOpen()} className={classes.hm_item}>
+										Home
+									</h4>
+								</Link>
+							</div>
+
+							<div className={classes.hm_li}>
+								<Image src={'/images/svg/branches.svg'} alt='' width={32} height={32} />
+								<Link href='/locations'>
+									<h4 onClick={() => handleOnOpen()} className={classes.hm_item}>
+										Branches
+									</h4>
+								</Link>
+							</div>
+
+							<div className={classes.hm_li}>
+								<Image src={'/images/svg/phone.svg'} alt='' width={32} height={32} />
+								<Link href='/locations'>
+									<h4 onClick={() => handleOnOpen()} className={classes.hm_item}>
+										Contact us
+									</h4>
+								</Link>
+							</div>
+
+								<Link href='/signup'>
+									<div className={classes.hm_signup} onClick={() => handleOnOpen()} >
+											<p className={classes.hm_signuptext} >sign up</p>
+									</div>
+								</Link>
+
+							<div className={classes.hm_social}>
+								<div className={classes.social_items}>
+									<Image src={'/images/svg/instagram.svg'} alt='' width={32} height={32} />
+								</div>
+								<div className={classes.social_items}>
+									<Image src={'/images/svg/twitter.svg'} alt='' width={32} height={32} />
+								</div>
+								<div className={classes.social_items}>
+									<Image src={'/images/svg/whatsapp.svg'} alt='' width={32} height={32} />
+								</div>
+								<div className={classes.social_items}>
+									<Image src={'/images/svg/facebook.svg'} alt='' width={32} height={32} />
+								</div>
+							</div>
+
 						</Menu>
 						)}
 					</div>
