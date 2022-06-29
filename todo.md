@@ -58,7 +58,7 @@
 ### " Othman "
 
 - [x] fix the first page css ( im on it 26-6-2022 , fixed the header layout tommorow the rest of the page will be fixed )
-- [ ] fix the hamburger menu in first page
+- [x] fix the hamburger menu in first page (29-6-2022)
 - [x] generate random id for each order
 - [ ] take my signin and signup form to the back end
 - [ ] location page (toggle icon, map when click on location) and the css
