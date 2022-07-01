@@ -61,6 +61,8 @@
 - [x] fix the hamburger menu in first page (29-6-2022)
 - [x] generate random id for each order
 - [ ] take my signin and signup form to the back end
+  - [x] signup form ( adding the user to the database ) "still no redirect"
+  - [ ] signin form ( checking the user in the database + authenticating the user )
 - [ ] location page (toggle icon, map when click on location) and the css
 - [ ] make plan in ur ipad how to tackle the lawhat tahakom
 
@@ -68,5 +70,5 @@
 
 - [x] do the sign in form
 - [x] sign up form
-- [] and there css
+- [ ] and there css
 - [ ] fix the checkout page css
