@@ -71,4 +71,4 @@
 - [x] do the sign in form
 - [x] sign up form
 - [ ] and there css
-- [ ] fix the checkout page css
+- [x] fix the checkout page css

@@ -21,8 +21,14 @@
 	width: 428px;
 }
 
+.ShoppingCart_title {
+	padding-bottom: 0.25em;
+	border-bottom: 1px solid #38afad;
+	margin-bottom: 1.25em;
+}
+
 .card {
-	background: #f7fdfc;
+	background: var(--clr-sleeve);
 	border-radius: 4px;
 	margin-bottom: 1em;
 	padding: 8px;

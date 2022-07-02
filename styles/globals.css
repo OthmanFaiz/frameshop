@@ -29,6 +29,7 @@
 
 	/* font style  */
 	--fs-title: 20px;
+	--fs-subtitle:19px
 	--fs-dish: 16px;
 	--fs-list: 14px;
 	--fs-discription: 12px;
@@ -38,11 +39,15 @@
 	--fc-primary: #181919;
 	--fc-accent: #999999;
 	--fc-white: #ffffff;
-	--fc-neutral: #C3C7C7;
+	--fc-neutral: #c3c7c7;
 
 	/* background color */
 	--clr-primary: #67cecc;
 	--clr-action: #eb9b3e;
+	--clr-sleeve: #e8f8f7;
+	--clr-textarea: #eaebeb;
+	--clr-input: rgba(196, 196, 196, 0.12)
+
 }
 
 /*=====================
@@ -50,7 +55,7 @@
   =====================*/
 body {
 	font-family: var(--ff-primary);
-	background-color: #F6F7F7;
+	background-color: #f6f7f7;
 	margin: 0 auto;
 }
 

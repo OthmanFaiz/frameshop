@@ -64,24 +64,27 @@ export default function Payment(props) {
 			<section className={classes.title}>
 				<h1 className={classes.info}>Payment</h1>
 
-				<div className={`${classes.flex} ${classes.Payment}`}>
-					<div className={classes.section}>
-						<h3>subtitle</h3>
-						<h3>{totalPrice.toFixed(2)} KWD</h3>
-					</div>
-					<div className={classes.section}>
-						<h3>Delivery</h3>
-						<h3>1.000 KWD</h3>
-					</div>
-					<div className={classes.section}>
-						<h1>Total Amount</h1>
-						<h1>{(totalPrice + 1).toFixed(2)} KWD</h1>
-					</div>
+				<div className={classes.section}>
+					<h3 className={classes.section_text}>Subtotal</h3>
+					<h3 className={classes.section_price}>{totalPrice.toFixed(2)} KWD</h3>
+				</div>
+				<div className={classes.section}>
+					<h3 className={classes.section_text}>Delivery</h3>
+					<h3 className={classes.section_price}>1.000 KWD</h3>
+				</div>
+				<div className={classes.section}>
+					<h1 className={classes.section_text}>Total Amount</h1>
+					<h1 className={classes.section_price}>
+						{(totalPrice + 1).toFixed(2)} KWD
+					</h1>
 				</div>
 
 				<section className={classes.Section_specialRequest}>
 					<h1 className={classes.info}>Special Request</h1>
-					<textarea className={classes.specialRequest_textarea}></textarea>
+					<textarea
+						placeholder='Add a note...'
+						className={classes.specialRequest_textarea}
+					></textarea>
 				</section>
 
 				<section className={classes.Section_form}>
@@ -186,14 +189,15 @@ export default function Payment(props) {
 							></input>
 						</div>
 						<div className={classes.actions}>
-							<button> checkout</button>
-							<Image
-								src='/images/svg/outline-payments.svg'
-								alt=''
-								width={109}
-								height={36}
-								className={classes.Image}
-							/>
+							<button> CHECKOUT</button>
+							<div className={classes.Image}>
+								<Image
+									src='/images/svg/outline-payments.svg'
+									alt=''
+									width={109}
+									height={36}
+								/>
+							</div>
 						</div>
 					</form>
 				</section>
