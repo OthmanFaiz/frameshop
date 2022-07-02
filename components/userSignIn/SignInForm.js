@@ -2,7 +2,7 @@ import classes from './SignInForm.module.css';
 import { useState, useRef } from 'react';
 import Link from 'next/link';
 
-export default function SignInForm() {
+export default function SignInForm({ signinHandler }) {
 	const [active, setActive] = useState(true);
 
 	// form ref
@@ -16,11 +16,11 @@ export default function SignInForm() {
 		const entered_Password = PasswordRef.current.value;
 
 		const usernameData = {
-			Email: entered_Email,
-			Password: entered_Password,
+			email: entered_Email,
+			password: entered_Password,
 		};
 		// here to check the object
-		console.log(usernameData);
+		signinHandler(usernameData);
 	}
 
 	return (

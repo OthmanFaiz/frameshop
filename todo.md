@@ -60,9 +60,11 @@
 - [x] fix the first page css ( im on it 26-6-2022 , fixed the header layout tommorow the rest of the page will be fixed )
 - [x] fix the hamburger menu in first page (29-6-2022)
 - [x] generate random id for each order
-- [ ] take my signin and signup form to the back end
+- [x] take my signin and signup form to the back end
   - [x] signup form ( adding the user to the database ) "still no redirect"
-  - [ ] signin form ( checking the user in the database + authenticating the user )
+  - [x] signin form ( checking the user in the database + authenticating the user )
+- [ ] authentication system ( after checking the user password make him stay loged in )
+- [ ] make visual changes to the signin and signup page
 - [ ] location page (toggle icon, map when click on location) and the css
 - [ ] make plan in ur ipad how to tackle the lawhat tahakom
 
