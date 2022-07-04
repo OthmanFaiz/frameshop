@@ -1,4 +1,4 @@
-import Header from '../components/SharedComponent/Header';
+import Header from '../components/Layout/Header';
 import SignupForm from '../components/userSignup/SignupForm';
 
 export default function SignIn() {

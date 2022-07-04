@@ -1,4 +1,4 @@
-import Header from '../components/SharedComponent/Header';
+import Header from '../components/Layout/Header';
 import Locations from '../components/Locations/Locations';
 
 export default function Location() {

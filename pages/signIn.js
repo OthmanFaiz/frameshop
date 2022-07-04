@@ -1,4 +1,4 @@
-import Header from '../components/SharedComponent/Header';
+import Header from '../components/Layout/Header';
 import SignInForm from '../components/userSignIn/SignInForm';
 import bcrypt from 'bcryptjs';
 

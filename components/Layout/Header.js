@@ -2,10 +2,21 @@ import Image from 'next/image';
 import classes from './Header.module.css';
 import { slide as Menu } from 'react-burger-menu';
 import Link from 'next/link';
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
+import { useRouter } from 'next/router';
 
 export default function Headers({ category }) {
+	const router = useRouter();
 	const [showMenu, setShowMenu] = useState(false);
+	const [home, setHome] = useState(false)
+
+	useEffect(() => {
+		if (router.pathname === '/') {
+			setHome(true)
+		} else {
+			setHome(false)
+		}
+	}, [router.pathname])
 
 	function handleOnOpen() {
 		setShowMenu(!showMenu);
@@ -58,7 +69,7 @@ export default function Headers({ category }) {
 
 	return (
 		<header className={`${classes.flex} ${classes.flex__col}`}>
-			<div className={`${classes.hero}`}>
+			<div className={home ? `${classes.hero}` : `${classes.hero_nothome}`}>
 				<div className={`${classes.nav} ${classes.flex} ${classes.flex__sb}`}>
 					<div className={classes.hero__menu}>
 						{/* https://www.npmjs.com/package/react-burger-menu   sexy npm package */}
@@ -143,7 +154,7 @@ export default function Headers({ category }) {
 					</div>
 				</div>
 			</div>
-
+			{home && (
 			<nav className={classes.scrollbar}>
 				<ul className={classes.flex}>
 					{category.items.map((item) => (
@@ -153,6 +164,7 @@ export default function Headers({ category }) {
 					))}
 				</ul>
 			</nav>
+			)}
 		</header>
 	);
 }

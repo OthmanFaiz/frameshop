@@ -1,4 +1,4 @@
-import Header from '../components/SharedComponent/Header';
+import Header from '../components/Layout/Header';
 import Payment from '../components/Checkout/Payment';
 import ShoppingCart from '../components/Checkout/ShoppingCart';
 

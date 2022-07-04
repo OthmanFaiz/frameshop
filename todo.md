@@ -65,6 +65,7 @@
   - [x] signin form ( checking the user in the database + authenticating the user )
 - [ ] authentication system ( after checking the user password make him stay loged in )
 - [ ] make visual changes to the signin and signup page
+- [x] fix the header layout ( 4-7-2022 )
 - [ ] location page (toggle icon, map when click on location) and the css
 - [ ] make plan in ur ipad how to tackle the lawhat tahakom
 

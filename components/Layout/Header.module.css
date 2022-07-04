@@ -36,6 +36,13 @@
 	width: 100%;
 }
 
+.hero_nothome {
+	display: flex;
+	justify-content: space-between;
+	margin: 0 auto;
+	width: 100%;
+}
+
 .hero__logo {
 	align-self: flex-start;
 	margin-top: 4px;
