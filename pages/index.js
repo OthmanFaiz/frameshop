@@ -13,6 +13,7 @@ export default function Home() {
 	const [items, setItems] = useState([]);
 
 	const { cart, setCart } = useCart();
+	const [showCart, setShowCart] = useState(false);
 	
 	const [showAddItem, setShowAddItem] = useState({state: false, item: null});
 
@@ -25,6 +26,14 @@ export default function Home() {
 			.then((res) => res.json())
 			.then((data) => setItems(data));
 	}, []);
+
+	useEffect(() => {
+		if (Object.entries(cart).length > 0) {
+			setShowCart(true);
+		} else {
+			setShowCart(false);
+		}
+	}, [cart]);
 
 	const addToCart = (item) => {
 		setCart({...cart, [item._id]: {...item}});
@@ -52,7 +61,7 @@ export default function Home() {
 					cart={cart}
 					showAddItemModal={showAddItemModal}
 				/>
-				<Footer cart={cart} />
+				{showCart && <Footer cart={cart} />}
 			</>
 		);
 	} else {
