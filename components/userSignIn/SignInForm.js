@@ -25,7 +25,8 @@ export default function SignInForm({ signinHandler }) {
 
 	return (
 		<div className={classes.card}>
-			<h1 className={classes.card_title}>Sign in</h1>
+			<h1 className={classes.card_title}>LOGIN </h1>
+
 			<form className={classes.form} onSubmit={submitHandler}>
 				<div className={classes.control}>
 					<label htmlFor='Email'></label>
@@ -33,8 +34,9 @@ export default function SignInForm({ signinHandler }) {
 						type='text'
 						required
 						id='Email'
-						placeholder='Email'
+						placeholder='EMAIL'
 						ref={EmailRef}
+						className={classes.placeholder}
 					></input>
 				</div>
 				<div className={classes.control}>
@@ -43,17 +45,21 @@ export default function SignInForm({ signinHandler }) {
 						type='password'
 						required
 						id='Password'
-						placeholder='Password'
+						placeholder='PASSWORD'
 						ref={PasswordRef}
+						className={classes.placeholder}
 					></input>
 				</div>
 				<div className={classes.actions}>
-					<button> sign in</button>
+					<button> Sign In</button>
+					<Link href='/signup'>
+						<button>Create Account</button>
+					</Link>
+					<Link href='/restpassword'>
+						<h2 className={classes.actions_password}>RESET YOUR PASSWORD</h2>
+					</Link>
 				</div>
 			</form>
-			<Link href='/signup'>
-				<button>create account</button>
-			</Link>
 		</div>
 	);
 }

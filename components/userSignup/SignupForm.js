@@ -30,7 +30,7 @@ export default function SignInForm({ signupHandler }) {
 			email: entered_Email,
 			password: bcrypt.hashSync(entered_Password, 10),
 			// https://www.abeautifulsite.net/posts/hashing-passwords-with-nodejs-and-bcrypt
-			signup_date: new Date()
+			signup_date: new Date(),
 		};
 		// signup function
 		signupHandler(NewUserData);
@@ -38,7 +38,7 @@ export default function SignInForm({ signupHandler }) {
 
 	return (
 		<div className={classes.card}>
-			<h1 className={classes.card_title}>Creat Account</h1>
+			<h1 className={classes.card_title}>Create Account</h1>
 			<form className={classes.form} onSubmit={submitHandler}>
 				<div className={classes.control}>
 					<label htmlFor='UserName'></label>
@@ -46,8 +46,9 @@ export default function SignInForm({ signupHandler }) {
 						type='text'
 						required
 						id='UserName'
-						placeholder='UserName'
+						placeholder='User Name'
 						ref={UserNameRef}
+						className={classes.placeholder}
 					></input>
 				</div>
 				<div className={classes.control}>
@@ -56,8 +57,9 @@ export default function SignInForm({ signupHandler }) {
 						type='text'
 						required
 						id='FullName'
-						placeholder='FullName'
+						placeholder='Full Name'
 						ref={FullNameRef}
+						className={classes.placeholder}
 					></input>
 				</div>
 				<div className={classes.control}>
@@ -66,8 +68,9 @@ export default function SignInForm({ signupHandler }) {
 						type='text'
 						required
 						id='PhoneNumber'
-						placeholder='PhoneNumber'
+						placeholder='Phone Number'
 						ref={PhoneNumberRef}
+						className={classes.placeholder}
 					></input>
 				</div>
 				<div className={classes.control}>
@@ -78,6 +81,7 @@ export default function SignInForm({ signupHandler }) {
 						id='Email'
 						placeholder='Email'
 						ref={EmailRef}
+						className={classes.placeholder}
 					></input>
 				</div>
 				<div className={classes.control}>
@@ -88,6 +92,7 @@ export default function SignInForm({ signupHandler }) {
 						id='Password'
 						placeholder='Password'
 						ref={PasswordRef}
+						className={classes.placeholder}
 					></input>
 				</div>
 				<div className={classes.control}>
@@ -96,12 +101,13 @@ export default function SignInForm({ signupHandler }) {
 						type='Password'
 						required
 						id='ConfirmPassword'
-						placeholder='ConfirmPassword'
+						placeholder='Confirm Password'
 						ref={ConfirmPasswordRef}
+						className={classes.placeholder}
 					></input>
 				</div>
 				<div className={classes.actions}>
-					<button> Creat Account</button>
+					<button> Create Account</button>
 				</div>
 			</form>
 		</div>
