@@ -3,7 +3,7 @@ import SignupForm from '../components/userSignup/SignupForm';
 
 export default function SignIn() {
 	async function signupHandler(userData) {
-		const response = await fetch('http://localhost:3000/api/newuser', {
+		const response = await fetch('/api/newuser', {
 			method: 'POST',
 			body: JSON.stringify(userData),
 			headers: {

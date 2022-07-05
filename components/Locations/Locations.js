@@ -5,7 +5,7 @@ import Image from 'next/image';
 export default function Locations() {
 	const [location, setLocation] = useState({});
 	useEffect(() => {
-		fetch('http://localhost:3000/api/locations')
+		fetch('/api/locations')
 			.then((res) => res.json())
 			.then((data) => setLocation(data));
 	}, []);

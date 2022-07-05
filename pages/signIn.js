@@ -4,7 +4,7 @@ import bcrypt from 'bcryptjs';
 
 export default function SignIn() {
 	async function signinHandler(userData) {
-		const response = await fetch('http://localhost:3000/api/signin', {
+		const response = await fetch('/api/signin', {
 			method: 'POST',
 			body: JSON.stringify(userData),
 			headers: {

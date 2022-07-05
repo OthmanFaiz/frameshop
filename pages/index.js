@@ -18,11 +18,11 @@ export default function Home() {
 	const [showAddItem, setShowAddItem] = useState({state: false, item: null});
 
 	useEffect(() => {
-		fetch('http://localhost:3000/api/items/category')
+		fetch('/api/items/category')
 			.then((res) => res.json())
 			.then((data) => setCategory(data));
 
-		fetch('http://localhost:3000/api/items')
+		fetch('/api/items')
 			.then((res) => res.json())
 			.then((data) => setItems(data));
 	}, []);
