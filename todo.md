@@ -80,4 +80,4 @@
 - [x] fix the checkout page css
 - [ ] add icons to whole website
 - [ ] do the profile page
-- [ ] do the checkout page css (margin)
+- [x] do the checkout page css (margin)
