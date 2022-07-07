@@ -1,6 +1,7 @@
 import classes from './SignInForm.module.css';
 import { useState, useRef } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function SignInForm({ signinHandler }) {
 	const [active, setActive] = useState(true);
@@ -25,30 +26,50 @@ export default function SignInForm({ signinHandler }) {
 
 	return (
 		<div className={classes.card}>
-			<h1 className={classes.card_title}>LOGIN </h1>
+			<Image
+				src='/images/svg/x.svg'
+				alt=''
+				width={36}
+				height={36}
+				color={'black'}
+			/>
+
+			<h1 className={classes.card_title}>
+				LOGIN{' '}
+				<Image src='/images/svg/indoor.svg' alt='' width={24} height={24} />
+			</h1>
 
 			<form className={classes.form} onSubmit={submitHandler}>
 				<div className={classes.control}>
-					<label htmlFor='Email'></label>
-					<input
-						type='text'
-						required
-						id='Email'
-						placeholder='EMAIL'
-						ref={EmailRef}
-						className={classes.placeholder}
-					></input>
+					<div className={classes.control_icon}>
+						<Image src='/images/svg/user.svg' alt='' width={16} height={16} />
+					</div>
+
+					<label htmlFor='Email'>
+						<input
+							type='text'
+							required
+							id='Email'
+							placeholder='EMAIL'
+							ref={EmailRef}
+							className={classes.placeholder}
+						></input>
+					</label>
 				</div>
 				<div className={classes.control}>
-					<label htmlFor='Password'></label>
-					<input
-						type='password'
-						required
-						id='Password'
-						placeholder='PASSWORD'
-						ref={PasswordRef}
-						className={classes.placeholder}
-					></input>
+					<div className={classes.control_icon}>
+						<Image src='/images/svg/lock.svg' alt='' width={16} height={16} />
+					</div>
+					<label htmlFor='Password'>
+						<input
+							type='password'
+							required
+							id='Password'
+							placeholder='PASSWORD'
+							ref={PasswordRef}
+							className={classes.placeholder}
+						></input>
+					</label>
 				</div>
 				<div className={classes.actions}>
 					<button> Sign In</button>

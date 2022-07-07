@@ -25,6 +25,13 @@
 	margin-bottom: 0.5rem;
 }
 
+.control_icon {
+	position: relative;
+	top: 30px;
+	z-index: 100;
+	margin-left: 1.5em;
+}
+
 .control input,
 .control textarea {
 	height: 36px;

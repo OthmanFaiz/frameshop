@@ -70,10 +70,14 @@
 - [ ] location page (toggle icon, map when click on location) and the css
 - [ ] make plan in ur ipad how to tackle the lawhat tahakom
 - [ ] working demo for the mobile version
+- [ ] add functionallty to x button on sign in and sign up to return to main page
 
 ### " Ahmad "
 
 - [x] do the sign in form
 - [x] sign up form
-- [ ] and there css
+- [x] and there icons
 - [x] fix the checkout page css
+- [ ] add icons to whole website
+- [ ] do the profile page
+- [ ] do the checkout page css (margin)
