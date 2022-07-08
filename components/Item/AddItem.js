@@ -29,14 +29,28 @@ export default function AddItem({ showAddItemModal, item, addToCart }) {
     return (
         <div className={`${classes.card} ${classes.flex} ${classes.flex_column}`}>
             <div style={imageStyle}>
+                <div className={classes.add_margin}>
                 <Image onClick={() => showAddItemModal(false, null)} src='/images/svg/x.svg' alt='' width={32} height={32} />
+                </div>
             </div>
 
-            <div>
-                <div>
-                    <div>{cart.name}</div>
-                    <div>{cart.description}</div>
-                    <div className={classes.card_price}>{cart.price.toFixed(2)} KWD</div>
+            <div className={`${classes.extra} ${classes.flex} ${classes.flex_column}`}>
+                <div className={`${classes.extra} ${classes.flex} ${classes.flex_column}`}>
+                    <div className={classes.extra_name}>{cart.name}</div>
+                    <div className={`${classes.extra} ${classes.flex} ${classes.extra_combain}`}>
+                        <div className={classes.extra_description}>{cart.description}</div>
+                        <div className={classes.extra_price}>{cart.price.toFixed(2)} KWD</div>
+                    </div>
+                </div>
+
+                <div className={classes.extra_extras}>
+                    <div className={classes.extra_cat}>Extra 12 Pieces</div>
+                    <div className={`${classes.flex} ${classes.flex_center}`}>
+                        <input className={classes.extra_input} type="checkbox" name="extra" id="extra" /> <label htmlFor="extra" className={classes.extra_label}>Extra Dozen of cookies</label>
+                    </div>
+
+                    <div className={`${classes.extra_message} ${classes.extra_cat}`}>Leave your message ( Optional )</div>
+                    <textarea className={classes.extra_textarea} placeholder="Leave your message here..."></textarea>
                 </div>
             </div>
 
@@ -45,8 +59,8 @@ export default function AddItem({ showAddItemModal, item, addToCart }) {
                     onClick={handelCartremove}
                     src='/images/svg/minus.svg'
                     alt=''
-                    width={12}
-                    height={12}
+                    width={16}
+                    height={16}
                 />
                 <div className={classes.card_count_draw}>
                     <p className={classes.card_counting}>
@@ -57,8 +71,8 @@ export default function AddItem({ showAddItemModal, item, addToCart }) {
                     onClick={handelCartAdd}
                     src='/images/svg/plus.svg'
                     alt=''
-                    width={12}
-                    height={12}
+                    width={16}
+                    height={16}
                 />
             </div>
 
