@@ -14,11 +14,33 @@ export default function AddItem({ showAddItemModal, item, addToCart }) {
             setCart({...cart, quantity: cart.quantity - 1});
         }
     }
+
+    const img = '/images/testbig.jpg'
+
+    const imageStyle = {
+        width: '100%',
+        height: '300px',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat',
+        backgroundImage: `url(${img})`
+    }
+
     return (
-        <div className={classes.card}>
-            <Image onClick={() => showAddItemModal(false, null)} src='/images/svg/x.svg' alt='' width={32} height={32} />
-            <h1>{cart._id}</h1>
-            <div className={`${classes.card_count} ${classes.flex} `}>
+        <div className={`${classes.card} ${classes.flex} ${classes.flex_column}`}>
+            <div style={imageStyle}>
+                <Image onClick={() => showAddItemModal(false, null)} src='/images/svg/x.svg' alt='' width={32} height={32} />
+            </div>
+
+            <div>
+                <div>
+                    <div>{cart.name}</div>
+                    <div>{cart.description}</div>
+                    <div className={classes.card_price}>{cart.price.toFixed(2)} KWD</div>
+                </div>
+            </div>
+
+            <div className={`${classes.card_count} ${classes.flex}`}>
                 <Image
                     onClick={handelCartremove}
                     src='/images/svg/minus.svg'
@@ -39,8 +61,9 @@ export default function AddItem({ showAddItemModal, item, addToCart }) {
                     height={12}
                 />
             </div>
+
             <div className={classes.add} onClick={() => addToCart(cart)}>
-                Add to cart
+                <div className={classes.AddItem}>Add to Cart</div><div className={classes.cart}><Image src='/images/svg/shopping-cart-10941.svg' alt='' width={24} height={24} /></div>
             </div>
         </div>
     )
