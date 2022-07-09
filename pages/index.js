@@ -3,6 +3,7 @@ import Headers from '../components/Layout/Header';
 import Main from '../components/Layout/Main';
 import Footer from '../components/Layout/Footer';
 import AddItem from '../components/Item/AddItem';
+import Loading from '../components/Layout/loading';
 
 import { useCart } from '../lib/CartContext';
 
@@ -65,6 +66,6 @@ export default function Home() {
 			</>
 		);
 	} else {
-		return <h1>loading...</h1>;
+		return <Loading />;
 	}
 }

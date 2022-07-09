@@ -68,6 +68,7 @@
 - [x] fix the header layout ( 4-7-2022 )
 - [x] dont let the main footer go to checkout page, if the cart is zero kwd
 - [x] fix css for the additems page ( 9-7-2022 )
+- [x] added loading screen effect ( 9-7-2022 )
 - [ ] location page (toggle icon, map when click on location) and the css
 - [ ] make plan in ur ipad how to tackle the lawhat tahakom
 - [ ] working demo for the mobile version

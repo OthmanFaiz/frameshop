@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import classes from './Locations.module.css';
 import Image from 'next/image';
+import Loading from '../Layout/loading';
 
 export default function Locations() {
 	const [location, setLocation] = useState({});
@@ -53,7 +54,7 @@ export default function Locations() {
 	}
 	return (
 		<>
-			<h1>Loading...</h1>
+			<Loading />
 		</>
 	);
 }

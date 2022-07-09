@@ -70,7 +70,7 @@ export default function SignInForm({ signupHandler }) {
 
 				<div className={classes.control}>
 					<div className={classes.control_icon}>
-						<Image src='/images/svg/phone.svg' alt='' width={16} height={16} />
+						<Image src='/images/svg/phoneblack.svg' alt='' width={16} height={16} />
 					</div>
 					<label htmlFor='PhoneNumber'>
 						<input
