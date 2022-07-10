@@ -4,7 +4,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 export default function SignInForm({ signinHandler }) {
-	const [active, setActive] = useState(true);
 
 	// form ref
 	const EmailRef = useRef();

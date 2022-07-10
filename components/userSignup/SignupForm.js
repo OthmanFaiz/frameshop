@@ -4,7 +4,6 @@ import bcrypt from 'bcryptjs';
 import Image from 'next/image';
 
 export default function SignInForm({ signupHandler }) {
-	const [active, setActive] = useState(true);
 
 	// form ref
 	const UserNameRef = useRef();
@@ -63,6 +62,23 @@ export default function SignInForm({ signupHandler }) {
 							id='UserName'
 							placeholder='User Name'
 							ref={UserNameRef}
+							className={classes.placeholder}
+						></input>
+					</label>
+				</div>
+
+				<div className={classes.control}>
+					<div className={classes.control_icon}>
+						<Image src='/images/svg/user.svg' alt='' width={16} height={16} />
+					</div>
+
+					<label htmlFor='FullName'>
+						<input
+							type='text'
+							required
+							id='FullName'
+							placeholder='Full Name'
+							ref={FullNameRef}
 							className={classes.placeholder}
 						></input>
 					</label>

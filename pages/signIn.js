@@ -12,7 +12,7 @@ export default function SignIn() {
 			},
 		})
 		const data = await response.json();
-		if (bcrypt.compareSync(userData.password, data.checkuser.password)){
+		if (data.checkuser && (await bcrypt.compare(userData.password, data.checkuser.password))){
 			console.log(data);
 		} else {
 			console.log('wrong password or email');
