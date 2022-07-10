@@ -21,6 +21,9 @@ export default function Footer({ cart }) {
 		}
 	},[cart])
 	return (
+		<>
+		<div className={classes.add_margin_top}>
+		</div>
 		<Link href='/checkout'>
 			<footer className={classes.flex}>
 				<div className={classes.footer_counting}>
@@ -37,6 +40,7 @@ export default function Footer({ cart }) {
 				</div>
 			</footer>
 		</Link>
+		</>
 	);
 }
 

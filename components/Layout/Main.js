@@ -33,7 +33,7 @@ export default function Main({
 												</button>
 											</div>
 										<Image
-											src='/images/test.jpg'
+											src={item.image}
 											alt=''
 											width={75}
 											height={75}
