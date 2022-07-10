@@ -80,6 +80,6 @@
 - [x] sign up form
 - [x] and there icons
 - [x] fix the checkout page css
-- [ ] add icons to whole website
+- [x] add icons to whole website
 - [ ] do the profile page
 - [x] do the checkout page css (margin)
