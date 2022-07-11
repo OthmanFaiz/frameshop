@@ -65,6 +65,7 @@
   - [x] signin form ( checking the user in the database + authenticating the user )
 - [ ] authentication system ( after checking the user password make him stay loged in )
   - [ ] use JWT for the tokens, add it to the signin & signup form
+  <!-- https://jasonwatmore.com/post/2021/08/04/next-js-11-jwt-authentication-tutorial-with-example-app#jwt-middleware-js -->
   - [ ] protected routes ( only the user can access the routes )
 - [ ] make visual changes to the signin and signup page
 - [x] fix the header layout ( 4-7-2022 )
