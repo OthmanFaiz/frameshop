@@ -63,11 +63,11 @@
 - [x] take my signin and signup form to the back end
   - [x] signup form ( adding the user to the database ) "still no redirect"
   - [x] signin form ( checking the user in the database + authenticating the user )
-- [ ] authentication system ( after checking the user password make him stay loged in )
-  - [ ] use JWT for the tokens, add it to the signin & signup form
+- [x] authentication system ( after checking the user password make him stay loged in )
+  - [x] use JWT for the tokens, add it to the signin & signup form
   <!-- https://next-auth.js.org/getting-started/introduction -->
   - [ ] protected routes ( only the user can access the routes )
-- [ ] make visual changes to the signin and signup page
+- [x] make visual changes to the signin and signup page
 - [x] fix the header layout ( 4-7-2022 )
 - [x] dont let the main footer go to checkout page, if the cart is zero kwd
 - [x] fix css for the additems page ( 9-7-2022 )

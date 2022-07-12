@@ -1,5 +1,6 @@
 import Header from '../components/Layout/Header';
 import SignupForm from '../components/userSignup/SignupForm';
+import Router from 'next/router';
 
 export default function SignIn() {
 	async function signupHandler(userData) {
@@ -11,7 +12,10 @@ export default function SignIn() {
 			},
 		})
 		const data = await response.json();
-		console.log(data);
+		if(data.state === 'success') {
+			// https://stackoverflow.com/questions/58173809/next-js-redirect-from-to-another-page
+			Router.push('/signIn');
+		}
 	}
 	return (
 		<>
