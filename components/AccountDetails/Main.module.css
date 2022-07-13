@@ -1,0 +1,73 @@
+/*=====================
+   Short Cuts  
+  =====================*/
+
+.flex {
+	display: flex;
+}
+
+.flex__sb {
+	justify-content: space-between;
+}
+
+.flex__col {
+	flex-direction: column;
+}
+/*=====================
+   layout   
+  =====================*/
+
+.card {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.card_title {
+	text-align: center;
+	margin-top: 10px;
+	font-size: var(--fs-title);
+}
+
+.card_control {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	border-bottom: 1px solid #67cecc;
+	padding-bottom: 0.5em;
+	margin-top: 1em;
+}
+
+.card_control_name,
+.card_control_address,
+.card_control_phone {
+	margin-left: 1em;
+}
+
+.card_control_trash {
+	border: 1px solid red;
+	width: 100%;
+
+	margin-left: 1em;
+}
+
+.control {
+	margin-top: 2em;
+	margin-right: 1em;
+	text-align: right;
+}
+
+.control_button {
+	cursor: pointer;
+	border: none;
+	padding: 0.75em 1.75em;
+	border-radius: 5px;
+	background-color: var(--clr-action);
+	font-weight: var(--fw-600);
+	color: white;
+	font-size: var(--fs-dish);
+}
+.control_button_plus {
+	color: white;
+	margin-left: 5px;
+	font-size: var(--fs-dish);
+}
