@@ -67,6 +67,7 @@
   - [x] use JWT for the tokens, add it to the signin & signup form
   <!-- https://next-auth.js.org/getting-started/introduction -->
   - [ ] protected routes ( only the user can access the routes )
+  - [x] middle ware to check if the user is loged in ( need updates in the signin & signup form, finish the context api in the index page ) (14-7-2022)
 - [x] make visual changes to the signin and signup page
 - [x] fix the header layout ( 4-7-2022 )
 - [x] dont let the main footer go to checkout page, if the cart is zero kwd
@@ -78,7 +79,7 @@
 - [ ] working demo for the mobile version
 - [ ] add functionallty to x button on sign in and sign up to return to main page
 - [ ] if login in is true, make it inside a state \, so we can change the sign in
-      button to sign up
+- [ ] button to sign up
 - [ ] make plan in ur ipad how to tackle the lawhat tahakom
 
 ### " Ahmad "

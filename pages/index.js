@@ -4,7 +4,7 @@ import Main from '../components/Layout/Main';
 import Footer from '../components/Layout/Footer';
 import AddItem from '../components/Item/AddItem';
 import Loading from '../components/Layout/loading';
-
+import jwt from 'jsonwebtoken';
 import { useCart } from '../lib/CartContext';
 
 import { useState, useEffect } from 'react';
@@ -13,7 +13,7 @@ export default function Home() {
 	const [category, setCategory] = useState({});
 	const [items, setItems] = useState([]);
 
-	const { cart, setCart } = useCart();
+	const { cart, setCart, userLoggedIn, setUserLoggedIn , user, setUser } = useCart();
 	const [showCart, setShowCart] = useState(false);
 	
 	const [showAddItem, setShowAddItem] = useState({state: false, item: null});
@@ -35,6 +35,25 @@ export default function Home() {
 			setShowCart(false);
 		}
 	}, [cart]);
+
+	useEffect(() => {
+		if (localStorage.getItem('token') && !userLoggedIn) {
+			setUserLoggedIn(true);
+		}
+
+		if (userLoggedIn && Object.entries(user).length === 0) {
+			const token = localStorage.getItem('token');
+			const decoded = jwt.decode(token);
+			const email = decoded.email;
+			fetch('/api/getuser', {
+				method: 'POST',
+				body: JSON.stringify({email}),
+				headers: {
+					'Content-Type': 'application/json',
+				},
+			}).then((res) => res.json()).then((data) => setUser({fullName: data.checkuser.fullName, email: data.checkuser.email, phoneNumber: data.checkuser.phoneNumber}));
+		}
+	}, [userLoggedIn]);
 
 	const addToCart = (item) => {
 		setCart({...cart, [item._id]: {...item}});
