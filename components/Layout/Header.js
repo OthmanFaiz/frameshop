@@ -158,7 +158,7 @@ export default function Headers({ category }) {
 
 								<div className={classes.hm_li}>
 									<Image
-										src={'/images/svg/phone.svg'}
+										src={'/images/svg/user1.svg'}
 										alt=''
 										width={32}
 										height={32}

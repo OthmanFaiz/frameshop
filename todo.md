@@ -75,12 +75,9 @@
 - [x] added loading screen effect ( 9-7-2022 )
 - [x] add images to the database ( 10-7-2022 )
 - [x] fixed the footer css ( 10-7-2022 )
-- [ ] location page ( map when click on location)
-- [ ] working demo for the mobile version
-- [ ] add functionallty to x button on sign in and sign up to return to main page
-- [ ] if login in is true, make it inside a state \, so we can change the sign in
-- [ ] button to sign up
-- [ ] make plan in ur ipad how to tackle the lawhat tahakom
+- [ ] in personal details page, add 3 functionallty :add addresse to database , delete button, render the address in html elements (instead of the dublicate)
+- [ ] if login in is true, make it inside a state , so we can change the sign in
+- [ ] control page
 
 ### " Ahmad "
 
@@ -89,6 +86,12 @@
 - [x] and there icons
 - [x] fix the checkout page css
 - [x] add icons to whole website
-- [ ] do the profile page
-- [ ] do the location page (icons)
+- [x] do the profile page
+- [ ] do the location page (icons) and switch
 - [x] do the checkout page css (margin)
+- [ ] control page
+
+### " small stuffs "
+
+- [ ] add functionallty to x button on sign in and sign up to return to main page
+- [ ] location page ( map when click on location)

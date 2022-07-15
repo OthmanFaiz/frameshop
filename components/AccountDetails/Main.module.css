@@ -17,15 +17,32 @@
    layout   
   =====================*/
 
+/* addresse */
 .card {
 	width: 100%;
 	margin: 0 auto;
 }
 
-.card_title {
+.card_header {
 	text-align: center;
-	margin-top: 10px;
+	margin-top: 20px;
+	padding-bottom: 20px;
 	font-size: var(--fs-title);
+	border-bottom: 1px solid #67cecc;
+	display: flex;
+}
+.card_header_title {
+	width: 90%;
+}
+
+.card_header_button {
+	cursor: pointer;
+	border: none;
+	color: white;
+	background-color: var(--clr-action);
+	padding: 0.125em 0.25em;
+	border-radius: 5px;
+	font-weight: var(--fw-600);
 }
 
 .card_control {
@@ -44,9 +61,8 @@
 }
 
 .card_control_trash {
-	border: 1px solid red;
 	width: 100%;
-
+	cursor: pointer;
 	margin-left: 1em;
 }
 
@@ -55,8 +71,59 @@
 	margin-right: 1em;
 	text-align: right;
 }
+/* form */
+
+.form {
+	padding: 1rem;
+	margin-top: 0.25em;
+	font-family: var(--ff-primary);
+	font-weight: var(--fw-600);
+}
+
+.control {
+	margin-bottom: 0.5rem;
+}
+
+.control label {
+	display: block;
+	font-weight: bold;
+	margin-bottom: 0.5rem;
+}
+
+.control input {
+	height: 36px;
+	display: block;
+	font: inherit;
+	background-color: var(--clr-input);
+	border-radius: 4px;
+	border: none;
+	width: 100%;
+	padding-left: 2em;
+}
+
+.actions {
+	margin-top: 1rem;
+	height: 68px;
+	text-align: center;
+	width: 100%;
+	background-color: var(--clr-action);
+	display: flex;
+	border-radius: 5px;
+}
+
+.actions button {
+	font-size: var(--fs-subtitle);
+	cursor: pointer;
+	border: none;
+	border-radius: 4px;
+	font-weight: bold;
+	color: white;
+	background-color: var(--clr-action);
+	margin-left: 7em;
+}
 
 .control_button {
+	margin: 1em;
 	cursor: pointer;
 	border: none;
 	padding: 0.75em 1.75em;
