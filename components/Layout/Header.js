@@ -4,12 +4,13 @@ import { slide as Menu } from 'react-burger-menu';
 import Link from 'next/link';
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/router';
+import { useCart } from '../../lib/CartContext';
 
 export default function Headers({ category }) {
 	const router = useRouter();
 	const [showMenu, setShowMenu] = useState(false);
 	const [home, setHome] = useState(false);
-	const [signedIn, setSignedIn] = useState(false);
+	const {userLoggedIn, setUser, setUserLoggedIn} = useCart();
 
 	useEffect(() => {
 		if (router.pathname === '/') {
@@ -23,6 +24,12 @@ export default function Headers({ category }) {
 		setShowMenu(!showMenu);
 	}
 
+	function signoutHandler() {
+		localStorage.removeItem('token'); // remove token from local storage
+		setUser({}); // set user to empty object
+		setUserLoggedIn(false); // set isSignedIn to false
+		handleOnOpen()
+	}
 	const hmstyles = {
 		// bmBurgerButton: {
 		//   position: 'fixed',
@@ -173,14 +180,21 @@ export default function Headers({ category }) {
 									</Link>
 								</div>
 
-								<div
+								{!userLoggedIn && <div
 									className={classes.hm_signup}
 									onClick={() => handleOnOpen()}
 								>
 									<Link href='/signIn'>
-										<p className={classes.hm_signuptext}> sign in</p>
+										<p className={classes.hm_signuptext}> Sign In</p>
 									</Link>
-								</div>
+								</div>}
+
+								{userLoggedIn && <div
+									className={classes.hm_signout}
+									onClick={() => signoutHandler()}
+								>
+										<p className={classes.hm_signouttext}> Sign Out</p>
+								</div>}
 
 								<div className={classes.hm_social}>
 									<div className={classes.social_items}>

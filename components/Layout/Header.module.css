@@ -127,6 +127,24 @@
 	font-weight: 700;
 }
 
+.hm_signout {
+	margin-top: 96px;
+	width: 319px;
+	height: 80px;
+	background: #CE4760;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+.hm_signouttext {
+	font-size: 28px;
+	line-height: 34px;
+	letter-spacing: -0.02em;
+	font-weight: 700;
+}
+
 .hm_social {
 	margin-top: 100px;
 }

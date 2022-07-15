@@ -76,7 +76,8 @@
 - [x] add images to the database ( 10-7-2022 )
 - [x] fixed the footer css ( 10-7-2022 )
 - [ ] in personal details page, add 3 functionallty :add addresse to database , delete button, render the address in html elements (instead of the dublicate)
-- [ ] if login in is true, make it inside a state , so we can change the sign in
+- [x] if login in is true, make it inside a state , so we can change the sign in(15-7-2022)
+- [x] added the context api to signin page and the hamburger menu ( 15-7-2022 )
 - [ ] control page
 
 ### " Ahmad "
