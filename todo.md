@@ -94,5 +94,5 @@
 
 ### " small stuffs "
 
-- [ ] add functionallty to x button on sign in and sign up to return to main page
+- [x] add functionallty to x button on sign in and sign up to return to main page (16-7-2022)
 - [ ] location page ( map when click on location)

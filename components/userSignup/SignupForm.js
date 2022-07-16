@@ -2,6 +2,7 @@ import classes from './SignupForm.module.css';
 import { useState, useRef } from 'react';
 import bcrypt from 'bcryptjs';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function SignInForm({ signupHandler }) {
 
@@ -38,13 +39,14 @@ export default function SignInForm({ signupHandler }) {
 
 	return (
 		<div className={classes.card}>
-			<Image
-				src='/images/svg/x.svg'
-				alt=''
-				width={36}
-				height={36}
-				color={'black'}
-			/>
+			<Link href="/">
+				<Image
+					src='/images/svg/x-black.svg'
+					alt=''
+					width={36}
+					height={36}
+				/>
+			</Link>
 			<h1 className={classes.card_title}>
 				Create Account{' '}
 				<Image src='/images/svg/user-plus.svg' alt='' width={24} height={24} />

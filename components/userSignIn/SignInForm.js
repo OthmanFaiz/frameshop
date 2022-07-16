@@ -25,14 +25,14 @@ export default function SignInForm({ signinHandler }) {
 
 	return (
 		<div className={classes.card}>
-			<Image
-				src='/images/svg/x.svg'
-				alt=''
-				width={36}
-				height={36}
-				color={'black'}
-			/>
-
+			<Link href="/">
+				<Image
+					src='/images/svg/x-black.svg'
+					alt=''
+					width={36}
+					height={36}
+				/>
+			</Link>
 			<h1 className={classes.card_title}>
 				LOGIN{' '}
 				<Image src='/images/svg/indoor.svg' alt='' width={24} height={24} />

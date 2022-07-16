@@ -188,7 +188,6 @@ export default function Main() {
 						<div className={classes.action}>
 							<button
 								className={classes.control_button}
-								onClick={AddAddress}
 								onClick={submitAddress}
 							>
 								Add New Address
