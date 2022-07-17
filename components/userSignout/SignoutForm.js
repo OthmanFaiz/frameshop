@@ -1,5 +1,4 @@
 import classes from './SignoutForm.module.css';
-import { useState, useRef } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 
