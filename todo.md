@@ -90,9 +90,15 @@
 - [x] do the profile page
 - [ ] do the location page (icons) and switch
 - [x] do the checkout page css (margin)
-- [ ] control page
+
+### " control page "
+
+- [ ] logo
+- [ ] the dashboard
 
 ### " small stuffs "
 
 - [x] add functionallty to x button on sign in and sign up to return to main page (16-7-2022)
 - [ ] location page ( map when click on location)
+- [ ] after sucessfull payment page, which show recipit id and time to arrivel
+      and information stuff

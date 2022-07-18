@@ -1,0 +1,55 @@
+/*=====================
+   Short Cuts  
+  =====================*/
+
+.flex {
+	display: flex;
+}
+
+.flex__sb {
+	justify-content: space-between;
+}
+
+.flex__col {
+	flex-direction: column;
+}
+/*=====================
+   header   
+  =====================*/
+.header {
+	border: 1px solid red;
+}
+.header_logo {
+}
+.header_logo_img {
+	padding-left: 1em;
+}
+/*=====================
+   nav   
+  =====================*/
+.nav {
+	margin-left: 0;
+	width: 264px;
+	height: 924px;
+}
+
+.nav_list {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 1em;
+	padding-left: 1em;
+}
+.nav_list_link {
+	margin-left: 0;
+	margin-bottom: 1em;
+	align-self: left;
+	font-size: 14px;
+	font-weight: 600;
+	color: #c3c7c7;
+	cursor: pointer;
+}
+
+.nav_list_link:active {
+	color: black;
+}
