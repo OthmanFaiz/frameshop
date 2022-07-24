@@ -17,12 +17,49 @@
    header   
   =====================*/
 .header {
-	border: 1px solid red;
+	background-color: bisque;
+	height: 100px;
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
 }
 .header_logo {
+	border: solid red 1px;
+
+	margin-left: 1em;
+	margin-top: 12px;
+	width: 264px;
 }
 .header_logo_img {
-	padding-left: 1em;
+}
+
+.header_searchBar {
+	border: solid red 1px;
+}
+
+.header_searchBar input {
+	margin-top: 26px;
+	width: 924px;
+	height: 2em;
+	border: none;
+	background-color: #f5f5f5;
+	padding: 12px 6px 12px 24px;
+	border-radius: 12px;
+}
+
+.header_user {
+	border: solid red 1px;
+	margin-right: 1em;
+	margin-top: 26px;
+}
+
+.header_user_details {
+	display: flex;
+}
+
+.header_user_details_name {
+	margin: 0 0.5em;
 }
 /*=====================
    nav   
@@ -31,13 +68,14 @@
 	margin-left: 0;
 	width: 264px;
 	height: 924px;
+	background-color: beige;
+	border: 1px solid red;
 }
 
 .nav_list {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	margin-top: 1em;
 	padding-left: 1em;
 }
 .nav_list_link {

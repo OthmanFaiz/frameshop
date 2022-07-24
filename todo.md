@@ -91,9 +91,11 @@
 - [ ] do the location page (icons) and switch
 - [x] do the checkout page css (margin)
 
-### " control page "
+### " control page {ahmad & othman} "
 
-- [ ] logo
+- css part :
+- [ ] logo color
+- [ ] left bar
 - [ ] the dashboard
 
 ### " small stuffs "
