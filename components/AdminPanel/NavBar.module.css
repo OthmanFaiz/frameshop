@@ -77,15 +77,21 @@
 	flex-direction: column;
 	justify-content: space-between;
 	padding-left: 1em;
+	margin-top: 22px;
 }
 .nav_list_link {
 	margin-left: 0;
-	margin-bottom: 1em;
+	margin-bottom: 24px;
 	align-self: left;
 	font-size: 14px;
 	font-weight: 600;
 	color: #c3c7c7;
 	cursor: pointer;
+	display: flex;
+}
+
+.nav_list_link_icon {
+	margin-right: 5px;
 }
 
 .nav_list_link:active {

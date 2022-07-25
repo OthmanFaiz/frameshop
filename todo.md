@@ -94,8 +94,8 @@
 ### " control page {ahmad & othman} "
 
 - css part :
-- [ ] logo color
-- [ ] left bar
+- [x] logo color
+- [x] left bar
 - [ ] the dashboard
 
 ### " small stuffs "
