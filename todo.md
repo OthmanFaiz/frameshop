@@ -96,7 +96,7 @@
 - css part :
 - [x] logo color
 - [x] left bar
-- [ ] the dashboard
+- [x] the dashboard
 
 ### " small stuffs "
 

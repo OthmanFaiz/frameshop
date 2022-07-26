@@ -13,23 +13,31 @@
 .flex__col {
 	flex-direction: column;
 }
+
+/*=====================
+   layout   
+  =====================*/
+.layout {
+	display: flex;
+	flex-direction: column;
+}
+
+
 /*=====================
    header   
   =====================*/
 .header {
 	background-color: bisque;
 	height: 100px;
-
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	width: 100%;
 }
 .header_logo {
 	border: solid red 1px;
-
 	margin-left: 1em;
 	margin-top: 12px;
-	width: 264px;
 }
 .header_logo_img {
 }
@@ -97,3 +105,13 @@
 .nav_list_link:active {
 	color: black;
 }
+
+
+/*=====================
+   content   
+  =====================*/
+
+  .split {
+	display: flex;
+	width: 100%;
+  }

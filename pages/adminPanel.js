@@ -1,9 +1,9 @@
-import NavBar from '../components/AdminPanel/NavBar';
+import Main from '../components/AdminPanel/Main';
 
 export default function AdminPanel() {
 	return (
 		<>
-			<NavBar />
+			<Main />
 		</>
 	);
 }
