@@ -1,0 +1,144 @@
+/*=====================
+   Short Cuts  
+  =====================*/
+
+.flex {
+	display: flex;
+}
+
+.flex__sb {
+	justify-content: space-between;
+}
+
+.flex__col {
+	flex-direction: column;
+}
+
+/*=====================
+   layout   
+  =====================*/
+.Layout {
+	width: 1240px;
+	background-color: #f5f6fa;
+}
+/*=====================
+   toplayout   
+  =====================*/
+
+.topLayout {
+	margin-top: 2em;
+	display: flex;
+	border: 1px solid blue;
+}
+
+.topLayout_box {
+	display: flex;
+	justify-content: space-between;
+	background-color: #fcfcfc;
+	width: 259px;
+	height: 109px;
+	border-radius: 8px;
+}
+
+.topLayout_box_text {
+	display: flex;
+	flex-direction: column;
+}
+
+.topLayout_box_img {
+	background-color: #173ead;
+	border-radius: 16px;
+	width: 85px;
+	height: 85px;
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+}
+
+.topLayout_box_price {
+	font-size: 16px;
+
+	font-weight: 600;
+	margin-top: 2em;
+	margin-bottom: 1em;
+}
+
+.topLayout_box_desc {
+	font-size: 18px;
+	color: #c3c7c7;
+	font-weight: 500;
+}
+
+.topLayout_box_img2 {
+	background-color: #ce4760;
+	border-radius: 16px;
+	width: 85px;
+	height: 85px;
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+}
+.topLayout_box_img3 {
+	background-color: #f2a359;
+	border-radius: 16px;
+	width: 85px;
+	height: 85px;
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+}
+.topLayout_box_img4 {
+	background-color: #67cecc;
+	border-radius: 16px;
+	width: 85px;
+	height: 85px;
+	display: flex;
+	justify-content: center;
+	margin-top: 1em;
+}
+
+/*=====================
+   mainlayout   
+  =====================*/
+
+.MainLayout {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.MainLayout_graph {
+	width: 812px;
+	height: 322px;
+	border: 1px solid red;
+	margin: 0 2em;
+	background-color: #fcfcfc;
+}
+
+.customerInfo {
+	width: 259px;
+	height: 322px;
+	border: 1px solid red;
+	background-color: #fcfcfc;
+}
+
+/*=====================
+   lowerlayout   
+  =====================*/
+
+.LowerLayout {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+
+.LowerLayout_card {
+	width: 259px;
+	height: 322px;
+	border: 1px solid red;
+	background-color: #fcfcfc;
+}
