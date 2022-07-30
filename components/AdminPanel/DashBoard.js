@@ -1,7 +1,7 @@
-import classes from './MainBody.module.css';
+import classes from './DashBoard.module.css';
 import Image from 'next/image';
 
-export default function MainBody() {
+export default function DashBoard() {
 	return (
 		<>
 			<section className={classes.Layout}>

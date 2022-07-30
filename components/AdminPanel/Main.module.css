@@ -37,8 +37,7 @@
 	margin-left: 1em;
 	margin-top: 12px;
 }
-.header_logo_img {
-}
+
 
 .header_searchBar {
 	border: solid red 1px;
@@ -57,11 +56,13 @@
 .header_user {
 	border: solid red 1px;
 	margin-right: 1em;
-	margin-top: 26px;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .header_user_details {
 	display: flex;
+	align-items: center;
 }
 
 .header_user_details_name {
@@ -74,7 +75,6 @@
 	margin-left: 0;
 	width: 264px;
 	height: 924px;
-	border: 1px solid red;
 }
 
 .nav_list {

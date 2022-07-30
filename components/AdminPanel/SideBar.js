@@ -3,12 +3,11 @@ import Link from 'next/link';
 import Image from 'next/image';
 
 
-export default function SideBar() {
+export default function SideBar({ changePage }) {
     return (
         <section className={classes.nav}>
         <ul className={classes.nav_list}>
-            <Link href='/DashBoard'>
-                <li className={classes.nav_list_link}>
+                <li className={classes.nav_list_link} onClick={() => changePage("DashBoard")}>
                 <div className={classes.nav_list_link_icon}>
                     <Image
                         src={'/images/svg/admin/dashboard.svg'}
@@ -19,9 +18,7 @@ export default function SideBar() {
                 </div>
                     DashBoard
                 </li>
-            </Link>
-            <Link href='/Customers'>
-                <li className={classes.nav_list_link}>
+                <li className={classes.nav_list_link} onClick={() => changePage("Customers")}>
                 <div className={classes.nav_list_link_icon}>
                     <Image
                         src={'/images/svg/admin/customers.svg'}
@@ -32,9 +29,7 @@ export default function SideBar() {
                 </div>
                     Customers
                 </li>
-            </Link>
-            <Link href='/Stuff'>
-                <li className={classes.nav_list_link}>
+                <li className={classes.nav_list_link} onClick={() => changePage("Stuff")}>
                 <div className={classes.nav_list_link_icon}>
                     <Image
                         src={'/images/svg/admin/stuff.svg'}
@@ -45,9 +40,7 @@ export default function SideBar() {
                 </div>
                     Stuff
                 </li>
-            </Link>
-            <Link href='/Menu'>
-                <li className={classes.nav_list_link}>
+                <li className={classes.nav_list_link} onClick={() => changePage("Menu")}>
                     <div className={classes.nav_list_link_icon}>
                     <Image
                         src={'/images/svg/admin/menu.svg'}
@@ -58,9 +51,7 @@ export default function SideBar() {
                     </div>
                     Menu
                 </li>
-            </Link>
-            <Link href='/Orders'>
-                <li className={classes.nav_list_link}>
+                <li className={classes.nav_list_link} onClick={() => changePage("Orders")}>
                 <div className={classes.nav_list_link_icon}>
                 <Image
                     src={'/images/svg/admin/orders.svg'}
@@ -71,9 +62,7 @@ export default function SideBar() {
                 </div>
                     Orders
                 </li>
-            </Link>
-            <Link href='/Analysis'>
-                <li className={classes.nav_list_link}>
+                <li className={classes.nav_list_link} onClick={() => changePage("Analysis")}>
                 <div className={classes.nav_list_link_icon}>
                 <Image
                     src={'/images/svg/admin/analysis.svg'}
@@ -84,9 +73,7 @@ export default function SideBar() {
                 </div>
                     Analysis
                 </li>
-            </Link>
-            <Link href='/Settings'>
-                <li className={classes.nav_list_link}>
+                <li className={classes.nav_list_link} onClick={() => changePage("Settings")}>
                 <div className={classes.nav_list_link_icon}>
                 <Image
                     src={'/images/svg/admin/settings.svg'}
@@ -97,7 +84,6 @@ export default function SideBar() {
                 </div>
                     Settings
                 </li>
-            </Link>
         </ul>
     </section>
     )
